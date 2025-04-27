@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['scad']
+injection-regex = 'openscad'
+language-servers = ['openscad-lsp']
+name = 'openscad'
+scope = 'source.openscad'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '	'

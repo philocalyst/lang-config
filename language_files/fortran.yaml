@@ -1,0 +1,18 @@
+language:
+    - comment-token: '!'
+      file-types:
+        - f
+        - for
+        - f90
+        - f95
+        - f03
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: fortran
+      language-servers:
+        - fortls
+      name: fortran
+      roots:
+        - fpm.toml
+      scope: source.fortran

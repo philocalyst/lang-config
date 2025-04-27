@@ -1,0 +1,13 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['gleam']
+injection-regex = 'gleam'
+language-servers = ['gleam']
+name = 'gleam'
+roots = ['gleam.toml']
+scope = 'source.gleam'
+
+[language.indent]
+tab-width = 2
+unit = '  '

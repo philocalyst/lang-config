@@ -1,0 +1,16 @@
+[[language]]
+comment-tokens = ['//']
+file-types = ['java', 'jav', 'pde']
+injection-regex = 'java'
+language-servers = ['jdtls']
+name = 'java'
+roots = ['pom.xml', 'build.gradle', 'build.gradle.kts']
+scope = 'source.java'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+file-types = ['tfvars']
+grammar = 'hcl'
+language-id = 'terraform-vars'
+language-servers = ['terraform-ls']
+name = 'tfvars'
+scope = 'source.tfvars'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,18 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - kt
+        - kts
+      indent:
+        tab-width: 4
+        unit: '    '
+      language-servers:
+        - kotlin-language-server
+      name: kotlin
+      roots:
+        - settings.gradle
+        - settings.gradle.kts
+      scope: source.kotlin

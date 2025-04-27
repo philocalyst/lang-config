@@ -1,0 +1,15 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - cr
+      grammar: ruby
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - crystalline
+      name: crystal
+      roots:
+        - shard.yml
+        - shard.lock
+      scope: source.cr

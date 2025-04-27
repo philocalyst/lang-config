@@ -1,0 +1,24 @@
+language:
+    - auto-format: true
+      comment-token: '%'
+      file-types:
+        - bib
+      formatter:
+        args:
+            - '-'
+            - --curly
+            - --drop-all-caps
+            - --remove-empty-fields
+            - --sort-fields
+            - --sort=year,author,id
+            - --strip-enclosing-braces
+            - --trailing-commas
+        command: bibtex-tidy
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: bib
+      language-servers:
+        - texlab
+      name: bibtex
+      scope: source.bib

@@ -1,0 +1,10 @@
+[[language]]
+comment-token = ';'
+file-types = ['ll']
+injection-regex = 'llvm'
+name = 'llvm'
+scope = 'source.llvm'
+
+[language.indent]
+tab-width = 2
+unit = '  '

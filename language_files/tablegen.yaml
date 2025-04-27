@@ -1,0 +1,13 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - td
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: tablegen
+      name: tablegen
+      scope: source.tablegen

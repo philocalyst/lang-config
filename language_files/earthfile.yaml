@@ -1,0 +1,14 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: Earthfile
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: earthfile
+      language-servers:
+        - earthlyls
+      name: earthfile
+      roots:
+        - Earthfile
+      scope: source.earthfile

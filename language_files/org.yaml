@@ -1,0 +1,9 @@
+language:
+    - file-types:
+        - org
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: org
+      name: org
+      scope: source.org

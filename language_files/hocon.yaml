@@ -1,0 +1,12 @@
+language:
+    - auto-format: true
+      comment-token: '#'
+      file-types:
+        - glob: '**/src/*/resources/**/*.conf'
+        - glob: '*scalafmt*.conf'
+        - glob: '*scalafix*.conf'
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: hocon
+      scope: source.conf

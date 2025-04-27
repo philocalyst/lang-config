@@ -1,0 +1,13 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - ejs
+      grammar: embedded-template
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: ejs
+      name: ejs
+      scope: text.html.ejs

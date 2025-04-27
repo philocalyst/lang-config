@@ -1,0 +1,15 @@
+[[language]]
+file-types = ['heex']
+injection-regex = 'heex'
+language-servers = ['elixir-ls']
+name = 'heex'
+roots = ['mix.exs', 'mix.lock']
+scope = 'source.heex'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

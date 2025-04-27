@@ -1,0 +1,10 @@
+language:
+    - comment-token: //
+      file-types:
+        - cel
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: cel
+      name: cel
+      scope: source.cel

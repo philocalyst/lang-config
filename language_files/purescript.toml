@@ -1,0 +1,21 @@
+[[language]]
+auto-format = true
+comment-token = '--'
+file-types = ['purs']
+injection-regex = 'purescript'
+language-servers = ['purescript-language-server']
+name = 'purescript'
+roots = ['spago.yaml', 'spago.dhall', 'bower.json']
+scope = 'source.purescript'
+
+[language.block-comment-tokens]
+end = '-}'
+start = '{-'
+
+[language.formatter]
+args = ['format']
+command = 'purs-tidy'
+
+[language.indent]
+tab-width = 2
+unit = '  '

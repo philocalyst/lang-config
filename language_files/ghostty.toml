@@ -1,0 +1,11 @@
+[[language]]
+comment-tokens = '#'
+name = 'ghostty'
+scope = 'source.ghostty'
+
+[[language.file-types]]
+glob = 'ghostty/config'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,13 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - webc
+      grammar: html
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: webc
+      name: webc
+      scope: text.html.webc

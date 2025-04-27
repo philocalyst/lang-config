@@ -1,0 +1,12 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - thrift
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: thrift
+      scope: source.thrift

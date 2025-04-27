@@ -1,0 +1,9 @@
+[[language]]
+comment-token = '#'
+grammar = 'gitattributes'
+injection-regex = 'git-attributes'
+name = 'git-attributes'
+scope = 'source.gitattributes'
+
+[[language.file-types]]
+glob = '.gitattributes'

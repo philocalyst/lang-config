@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['glsl', 'vert', 'tesc', 'tese', 'geom', 'frag', 'comp']
+injection-regex = 'glsl'
+language-servers = ['glsl_analyzer']
+name = 'glsl'
+scope = 'source.glsl'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

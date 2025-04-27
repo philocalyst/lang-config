@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '#'
+injection-regex = 'git-rebase'
+name = 'git-rebase'
+scope = 'source.gitrebase'
+
+[[language.file-types]]
+glob = 'git-rebase-todo'
+
+[language.indent]
+tab-width = 2
+unit = '	'

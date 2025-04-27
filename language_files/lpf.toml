@@ -1,0 +1,5 @@
+[[language]]
+comment-token = '#'
+file-types = ['lpf']
+name = 'lpf'
+scope = 'source.lpf'

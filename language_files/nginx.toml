@@ -1,0 +1,22 @@
+[[language]]
+comment-token = '#'
+injection-regex = 'nginx'
+name = 'nginx'
+roots = ['nginx.conf']
+scope = 'source.nginx'
+
+[[language.file-types]]
+glob = 'sites-available/*.conf'
+
+[[language.file-types]]
+glob = 'sites-enabled/*.conf'
+
+[[language.file-types]]
+glob = 'nginx.conf'
+
+[[language.file-types]]
+glob = 'conf.d/*.conf'
+
+[language.indent]
+tab-width = 4
+unit = '    '

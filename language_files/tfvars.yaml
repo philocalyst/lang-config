@@ -1,0 +1,17 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: '#'
+      file-types:
+        - tfvars
+      grammar: hcl
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-id: terraform-vars
+      language-servers:
+        - terraform-ls
+      name: tfvars
+      scope: source.tfvars

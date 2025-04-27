@@ -1,0 +1,14 @@
+[[language]]
+file-types = ['njk']
+grammar = 'jinja2'
+injection-regex = 'nunjucks'
+name = 'nunjucks'
+scope = 'text.html.nunjucks'
+
+[language.block-comment-tokens]
+end = '#}'
+start = '{#'
+
+[language.indent]
+tab-width = 2
+unit = '  '

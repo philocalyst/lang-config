@@ -1,0 +1,13 @@
+[[language]]
+file-types = ['twig']
+injection-regex = 'twig'
+name = 'twig'
+scope = 'source.twig'
+
+[language.block-comment-tokens]
+end = '#}'
+start = '{#'
+
+[language.indent]
+tab-width = 2
+unit = '  '

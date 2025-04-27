@@ -1,0 +1,16 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+file-types = ['fish']
+injection-regex = 'fish'
+language-servers = ['fish-lsp']
+name = 'fish'
+scope = 'source.fish'
+shebangs = ['fish']
+
+[language.formatter]
+command = 'fish_indent'
+
+[language.indent]
+tab-width = 4
+unit = '    '

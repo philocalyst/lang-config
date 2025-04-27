@@ -1,0 +1,5 @@
+language:
+    - file-types:
+        - glob: passwd
+      name: passwd
+      scope: source.passwd

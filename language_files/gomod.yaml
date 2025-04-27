@@ -1,0 +1,13 @@
+language:
+    - auto-format: true
+      comment-token: //
+      file-types:
+        - glob: go.mod
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: gomod
+      language-servers:
+        - gopls
+      name: gomod
+      scope: source.gomod

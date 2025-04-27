@@ -1,0 +1,37 @@
+[[language]]
+comment-token = '//'
+file-types = ['js', 'mjs', 'cjs', 'rules', 'es6', 'pac', {glob = '.node_repl_history'}, {glob = 'jakefile'}]
+injection-regex = '(js|javascript)'
+language-id = 'javascript'
+language-servers = ['typescript-language-server']
+name = 'javascript'
+roots = ['package.json']
+scope = 'source.js'
+shebangs = ['node']
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.debugger]
+name = 'node-debug2'
+transport = 'stdio'
+
+[language.debugger.quirks]
+absolute-paths = true
+
+[[language.debugger.templates]]
+name = 'source'
+request = 'launch'
+
+[language.debugger.templates.args]
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+default = 'index.js'
+name = 'main'
+
+[language.indent]
+tab-width = 2
+unit = '  '

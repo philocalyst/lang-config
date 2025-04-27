@@ -1,0 +1,9 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - feature
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: gherkin
+      scope: source.feature

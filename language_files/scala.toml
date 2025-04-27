@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['scala', 'sbt', 'sc']
+language-servers = ['metals']
+name = 'scala'
+roots = ['build.sbt', 'build.sc', 'build.gradle', 'build.gradle.kts', 'pom.xml', '.scala-build']
+scope = 'source.scala'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

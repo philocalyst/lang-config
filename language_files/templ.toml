@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '//'
+file-types = ['templ']
+language-servers = ['templ']
+name = 'templ'
+roots = ['go.work', 'go.mod']
+scope = 'source.templ'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '--'
+file-types = ['sql', 'dsql']
+injection-regex = 'sql'
+name = 'sql'
+scope = 'source.sql'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

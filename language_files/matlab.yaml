@@ -1,0 +1,12 @@
+language:
+    - comment-token: '%'
+      file-types:
+        - m
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: matlab
+      scope: source.m
+      shebangs:
+        - octave-cli
+        - matlab

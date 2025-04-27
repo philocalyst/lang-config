@@ -1,0 +1,23 @@
+[[language]]
+comment-token = '#'
+file-types = ['nim', 'nims', 'nimble']
+injection-regex = 'nim'
+language-servers = ['nimlangserver']
+name = 'nim'
+scope = 'source.nim'
+shebangs = []
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = ']#'
+start = '#['
+
+[language.indent]
+tab-width = 2
+unit = '  '

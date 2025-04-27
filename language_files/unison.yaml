@@ -1,0 +1,18 @@
+language:
+    - auto-format: false
+      auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '`': '`'
+        '{': '}'
+      comment-token: --
+      file-types:
+        - u
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: unison
+      name: unison
+      scope: source.unison
+      shebangs: []

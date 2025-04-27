@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '--'
+file-types = ['hs', 'hs-boot', 'hsc']
+injection-regex = 'hs|haskell'
+language-servers = ['haskell-language-server']
+name = 'haskell'
+roots = ['Setup.hs', 'stack.yaml', 'cabal.project']
+scope = 'source.haskell'
+
+[language.block-comment-tokens]
+end = '-}'
+start = '{-'
+
+[language.indent]
+tab-width = 2
+unit = '  '

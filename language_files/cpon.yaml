@@ -1,0 +1,12 @@
+language:
+    - auto-format: true
+      comment-token: //
+      file-types:
+        - cpon
+        - cp
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: cpon
+      name: cpon
+      scope: scope.cpon

@@ -1,0 +1,9 @@
+[[language]]
+file-types = ['wren']
+injection-regex = 'wren'
+name = 'wren'
+scope = 'source.wren'
+
+[language.indent]
+tab-width = 2
+unit = '  '

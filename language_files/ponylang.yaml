@@ -1,0 +1,16 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - pony
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: pony
+      name: ponylang
+      roots:
+        - corral.json
+        - lock.json
+      scope: source.pony

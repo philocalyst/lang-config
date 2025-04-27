@@ -1,0 +1,14 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: .gitignore_global
+        - glob: git/ignore
+        - glob: .ignore
+        - glob: CODEOWNERS
+        - glob: .config/helix/ignore
+        - glob: .helix/ignore
+        - glob: .*ignore
+      grammar: gitignore
+      injection-regex: git-ignore
+      name: git-ignore
+      scope: source.gitignore

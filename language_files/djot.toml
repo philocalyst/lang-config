@@ -1,0 +1,13 @@
+[[language]]
+file-types = ['dj', 'djot']
+injection-regex = 'dj|djot'
+name = 'djot'
+scope = 'source.djot'
+
+[language.block-comment-tokens]
+end = '%}'
+start = '{%'
+
+[language.indent]
+tab-width = 2
+unit = '  '

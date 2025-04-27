@@ -1,0 +1,19 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - jsx
+      grammar: javascript
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: jsx
+      language-id: javascriptreact
+      language-servers:
+        - typescript-language-server
+      name: jsx
+      roots:
+        - package.json
+      scope: source.jsx

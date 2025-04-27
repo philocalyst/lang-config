@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '//'
+file-types = ['adl']
+injection-regex = 'adl'
+name = 'adl'
+roots = []
+scope = 'source.adl'
+
+[language.auto-pairs]
+'"' = '"'
+'<' = '>'
+'{' = '}'
+
+[language.indent]
+tab-width = 2
+unit = '  '

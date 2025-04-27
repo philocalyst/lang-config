@@ -1,0 +1,13 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - ron
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: ron
+      name: ron
+      scope: source.ron

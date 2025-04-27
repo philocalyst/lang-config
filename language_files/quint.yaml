@@ -1,0 +1,14 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - qnt
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - quint-language-server
+      name: quint
+      scope: source.quint

@@ -1,0 +1,27 @@
+[[language]]
+auto-format = true
+comment-token = ';'
+grammar = 'scheme'
+name = 'dune'
+roots = ['dune-project']
+scope = 'source.dune'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[[language.file-types]]
+glob = 'dune-project'
+
+[[language.file-types]]
+glob = 'dune'
+
+[language.formatter]
+args = ['format-dune-file']
+command = 'dune'
+
+[language.indent]
+tab-width = 1
+unit = ' '

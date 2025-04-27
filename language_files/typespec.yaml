@@ -1,0 +1,19 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - tsp
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (tsp|typespec)
+      language-id: typespec
+      language-servers:
+        - typespec
+      name: typespec
+      roots:
+        - tspconfig.yaml
+      scope: source.typespec

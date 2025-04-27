@@ -1,0 +1,25 @@
+[[language]]
+comment-token = '--'
+file-types = ['lean']
+injection-regex = 'lean'
+language-servers = ['lean']
+name = 'lean'
+roots = ['lakefile.lean']
+rulers = [101]
+scope = 'source.lean'
+text-width = 100
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+'⟨' = '⟩'
+
+[language.block-comment-tokens]
+end = '-/'
+start = '/-'
+
+[language.indent]
+tab-width = 2
+unit = '  '

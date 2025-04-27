@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['kt', 'kts']
+language-servers = ['kotlin-language-server']
+name = 'kotlin'
+roots = ['settings.gradle', 'settings.gradle.kts']
+scope = 'source.kotlin'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

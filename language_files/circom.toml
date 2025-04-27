@@ -1,0 +1,13 @@
+[[language]]
+auto-format = false
+comment-tokens = '//'
+file-types = ['circom']
+injection-regex = 'circom'
+language-servers = ['circom-lsp']
+name = 'circom'
+roots = ['package.json']
+scope = 'source.circom'
+
+[language.indent]
+tab-width = 4
+unit = '    '

@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+file-types = ['hcl', 'tf', 'nomad']
+injection-regex = '(hcl|tf|nomad)'
+language-id = 'terraform'
+language-servers = ['terraform-ls']
+name = 'hcl'
+scope = 'source.hcl'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

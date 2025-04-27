@@ -1,0 +1,41 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      debugger:
+        name: node-debug2
+        quirks:
+            absolute-paths: true
+        templates:
+            - args:
+                program: '{0}'
+              completion:
+                - completion: filename
+                  default: index.js
+                  name: main
+              name: source
+              request: launch
+        transport: stdio
+      file-types:
+        - js
+        - mjs
+        - cjs
+        - rules
+        - es6
+        - pac
+        - glob: .node_repl_history
+        - glob: jakefile
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (js|javascript)
+      language-id: javascript
+      language-servers:
+        - typescript-language-server
+      name: javascript
+      roots:
+        - package.json
+      scope: source.js
+      shebangs:
+        - node

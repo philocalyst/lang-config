@@ -1,0 +1,21 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - glsl
+        - vert
+        - tesc
+        - tese
+        - geom
+        - frag
+        - comp
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: glsl
+      language-servers:
+        - glsl_analyzer
+      name: glsl
+      scope: source.glsl

@@ -1,0 +1,12 @@
+language:
+    - comment-token: ;
+      file-types:
+        - bass
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: bass
+      language-servers:
+        - bass
+      name: bass
+      scope: source.bass

@@ -1,0 +1,12 @@
+[[language]]
+comment-token = ';'
+file-types = ['clj', 'cljs', 'cljc', 'clje', 'cljr', 'cljx', 'edn', 'boot']
+injection-regex = '(clojure|clj|edn|boot)'
+language-servers = ['clojure-lsp']
+name = 'clojure'
+roots = ['project.clj', 'build.boot', 'deps.edn', 'shadow-cljs.edn']
+scope = 'source.clojure'
+
+[language.indent]
+tab-width = 2
+unit = '  '

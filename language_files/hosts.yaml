@@ -1,0 +1,6 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: hosts
+      name: hosts
+      scope: source.hosts

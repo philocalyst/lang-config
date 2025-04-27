@@ -1,0 +1,10 @@
+language:
+    - file-types:
+        - edoc
+        - edoc.in
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: edoc
+      name: edoc
+      scope: source.edoc

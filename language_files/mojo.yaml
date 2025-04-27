@@ -1,0 +1,24 @@
+language:
+    - auto-format: true
+      comment-token: '#'
+      file-types:
+        - mojo
+        - "\U0001F525"
+      formatter:
+        args:
+            - run
+            - mojo
+            - format
+            - -q
+            - '-'
+        command: magic
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: mojo
+      language-servers:
+        - mojo-lsp
+      name: mojo
+      roots:
+        - __init__.mojo
+      scope: source.mojo

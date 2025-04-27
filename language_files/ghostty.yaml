@@ -1,0 +1,9 @@
+language:
+    - comment-tokens: '#'
+      file-types:
+        - glob: ghostty/config
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: ghostty
+      scope: source.ghostty

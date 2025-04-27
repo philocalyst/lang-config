@@ -1,0 +1,11 @@
+language:
+    - file-types: []
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: php-only
+      name: php-only
+      roots:
+        - composer.json
+        - index.php
+      scope: source.php-only

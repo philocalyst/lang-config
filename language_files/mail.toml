@@ -1,0 +1,5 @@
+[[language]]
+file-types = ['eml']
+injection-regex = 'mail|eml|email'
+name = 'mail'
+scope = 'text.mail'

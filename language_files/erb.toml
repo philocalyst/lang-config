@@ -1,0 +1,14 @@
+[[language]]
+file-types = ['erb']
+grammar = 'embedded-template'
+injection-regex = 'erb'
+name = 'erb'
+scope = 'text.html.erb'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

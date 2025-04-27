@@ -1,0 +1,16 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - vue
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: vue
+      language-servers:
+        - vuels
+      name: vue
+      roots:
+        - package.json
+      scope: source.vue

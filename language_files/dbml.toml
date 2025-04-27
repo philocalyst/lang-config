@@ -1,0 +1,10 @@
+[[language]]
+comment-token = ';'
+file-types = ['dbml']
+injection-regex = 'dbml'
+name = 'dbml'
+scope = 'source.dbml'
+
+[language.indent]
+tab-width = 2
+unit = '  '

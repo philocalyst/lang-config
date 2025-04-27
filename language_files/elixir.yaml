@@ -1,0 +1,19 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - ex
+        - exs
+        - glob: mix.lock
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (elixir|ex)
+      language-servers:
+        - elixir-ls
+      name: elixir
+      roots:
+        - mix.exs
+        - mix.lock
+      scope: source.elixir
+      shebangs:
+        - elixir

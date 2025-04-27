@@ -1,0 +1,14 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: COMMIT_EDITMSG
+        - glob: MERGE_MSG
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: git-commit
+      rulers:
+        - 51
+        - 73
+      scope: git.commitmsg
+      text-width: 72

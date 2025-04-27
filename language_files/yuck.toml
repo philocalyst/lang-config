@@ -1,0 +1,10 @@
+[[language]]
+comment-token = ';'
+file-types = ['yuck']
+injection-regex = 'yuck'
+name = 'yuck'
+scope = 'source.yuck'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,12 @@
+language:
+    - comment-token: //
+      file-types:
+        - sp
+        - inc
+      indent:
+        tab-width: 4
+        unit: '  '
+      language-servers:
+        - sourcepawn-studio
+      name: sourcepawn
+      scope: source.sourcepawn

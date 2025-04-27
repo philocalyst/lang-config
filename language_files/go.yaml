@@ -1,0 +1,72 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      debugger:
+        args:
+            - dap
+        command: dlv
+        name: go
+        port-arg: -l 127.0.0.1:{}
+        templates:
+            - args:
+                mode: debug
+                program: '{0}'
+              completion:
+                - completion: filename
+                  default: .
+                  name: entrypoint
+              name: source
+              request: launch
+            - args:
+                mode: exec
+                program: '{0}'
+              completion:
+                - completion: filename
+                  name: binary
+              name: binary
+              request: launch
+            - args:
+                mode: test
+                program: '{0}'
+              completion:
+                - completion: directory
+                  default: .
+                  name: tests
+              name: test
+              request: launch
+            - args:
+                mode: local
+                processId: '{0}'
+              completion:
+                - pid
+              name: attach
+              request: attach
+            - args:
+                coreFilePath: '{1}'
+                mode: core
+                program: '{0}'
+              completion:
+                - completion: filename
+                  name: binary
+                - completion: filename
+                  name: core
+              name: core
+              request: launch
+        transport: tcp
+      file-types:
+        - go
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: go
+      language-servers:
+        - gopls
+        - golangci-lint-lsp
+      name: go
+      roots:
+        - go.work
+        - go.mod
+      scope: source.go

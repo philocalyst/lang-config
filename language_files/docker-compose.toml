@@ -1,0 +1,17 @@
+[[language]]
+comment-token = '#'
+grammar = 'yaml'
+language-servers = ['docker-compose-langserver', 'yaml-language-server']
+name = 'docker-compose'
+roots = ['docker-compose.yaml', 'docker-compose.yml']
+scope = 'source.yaml.docker-compose'
+
+[[language.file-types]]
+glob = 'docker-compose.yaml'
+
+[[language.file-types]]
+glob = 'docker-compose.yml'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,5 @@
+language:
+    - file-types:
+        - log
+      name: log
+      scope: source.log

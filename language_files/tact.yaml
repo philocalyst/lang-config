@@ -1,0 +1,15 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        <: '>'
+        '{': '}'
+      comment-token: //
+      file-types:
+        - tact
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: tact
+      name: tact
+      scope: source.tact

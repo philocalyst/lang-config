@@ -1,0 +1,10 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - tape
+      grammar: vhs
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: vhs
+      scope: source.vhs

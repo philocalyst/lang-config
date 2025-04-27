@@ -1,0 +1,10 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - prql
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: prql
+      name: prql
+      scope: source.prql

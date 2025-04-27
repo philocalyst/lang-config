@@ -1,0 +1,6 @@
+[[language]]
+name = 'passwd'
+scope = 'source.passwd'
+
+[[language.file-types]]
+glob = 'passwd'

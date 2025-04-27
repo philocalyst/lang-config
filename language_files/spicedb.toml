@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '//'
+file-types = ['zed']
+injection-regex = 'spicedb'
+name = 'spicedb'
+scope = 'source.zed'
+
+[language.indent]
+tab-width = 2
+unit = '  '

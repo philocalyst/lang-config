@@ -1,0 +1,9 @@
+language:
+    - block-comment-tokens:
+        end: ;)
+        start: (;
+      comment-token: ;;
+      file-types:
+        - wast
+      name: wast
+      scope: source.wast

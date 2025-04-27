@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['robot', 'resource']
+injection-regex = 'robot'
+language-servers = ['robotframework_ls']
+name = 'robot'
+scope = 'source.robot'
+
+[language.indent]
+tab-width = 4
+unit = ' '

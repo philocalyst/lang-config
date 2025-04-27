@@ -1,0 +1,13 @@
+[[language]]
+comment-token = '#'
+name = 'sshclientconfig'
+scope = 'source.sshclientconfig'
+
+[[language.file-types]]
+glob = '.ssh/config'
+
+[[language.file-types]]
+glob = '/etc/ssh/ssh_config'
+
+[[language.file-types]]
+glob = 'ssh_config.d/*.conf'

@@ -1,0 +1,14 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - wgsl
+      indent:
+        tab-width: 4
+        unit: '    '
+      language-servers:
+        - wgsl-analyzer
+      name: wgsl
+      scope: source.wgsl

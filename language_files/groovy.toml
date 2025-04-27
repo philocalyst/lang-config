@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '//'
+file-types = ['gradle', 'groovy', 'jenkinsfile', {glob = 'Jenkinsfile'}, {glob = 'Jenkinsfile.*'}]
+language-id = 'groovy'
+name = 'groovy'
+scope = 'source.groovy'
+shebangs = ['groovy']
+
+[language.indent]
+tab-width = 2
+unit = '  '

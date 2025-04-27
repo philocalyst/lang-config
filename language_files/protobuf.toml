@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '//'
+file-types = ['proto']
+grammar = 'proto'
+injection-regex = 'proto'
+language-servers = ['buf', 'pbkit', 'protols']
+name = 'protobuf'
+scope = 'source.proto'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,9 @@
+language:
+    - comment-token: //
+      file-types:
+        - cl
+      injection-regex: (cl|opencl)
+      language-servers:
+        - clangd
+      name: opencl
+      scope: source.cl

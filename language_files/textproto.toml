@@ -1,0 +1,13 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+file-types = ['txtpb', 'textpb', 'textproto']
+name = 'textproto'
+scope = 'source.textproto'
+
+[language.formatter]
+command = 'txtpbfmt'
+
+[language.indent]
+tab-width = 2
+unit = '  '

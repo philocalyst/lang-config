@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '#'
+file-types = ['bzl', 'bazel', 'star', {glob = 'BUILD'}, {glob = 'BUILD.*'}, {glob = 'Tiltfile'}, {glob = 'WORKSPACE'}, {glob = 'WORKSPACE.bzlmod'}]
+grammar = 'python'
+injection-regex = '(starlark|bzl|bazel)'
+language-servers = ['starpls']
+name = 'starlark'
+scope = 'source.starlark'
+
+[language.indent]
+tab-width = 4
+unit = '    '

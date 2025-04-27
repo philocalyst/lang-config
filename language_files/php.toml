@@ -1,0 +1,21 @@
+[[language]]
+comment-token = '//'
+file-types = ['php', 'inc', 'php4', 'php5', 'phtml', 'ctp']
+injection-regex = 'php'
+language-servers = ['intelephense']
+name = 'php'
+roots = ['composer.json', 'index.php']
+scope = 'source.php'
+shebangs = ['php']
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/**'
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

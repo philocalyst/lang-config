@@ -1,0 +1,14 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - astro
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: astro
+      language-servers:
+        - astro-ls
+      name: astro
+      scope: source.astro

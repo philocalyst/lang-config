@@ -1,0 +1,22 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-tokens:
+        - //
+      file-types:
+        - java
+        - jav
+        - pde
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: java
+      language-servers:
+        - jdtls
+      name: java
+      roots:
+        - pom.xml
+        - build.gradle
+        - build.gradle.kts
+      scope: source.java

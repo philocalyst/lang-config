@@ -1,0 +1,24 @@
+[[language]]
+comment-token = '//'
+file-types = ['ohm']
+injection-regex = 'ohm'
+name = 'ohm'
+scope = 'source.ohm'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'<' = '>'
+'{' = '}'
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/*'
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/**'
+
+[language.indent]
+tab-width = 2
+unit = '  '

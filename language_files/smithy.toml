@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '//'
+file-types = ['smithy']
+injection-regex = 'smithy'
+language-servers = ['cs']
+name = 'smithy'
+roots = ['smithy-build.json']
+scope = 'source.smithy'
+
+[language.indent]
+tab-width = 4
+unit = '    '

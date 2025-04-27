@@ -1,0 +1,18 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - res
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: rescript
+      language-servers:
+        - rescript-language-server
+      name: rescript
+      roots:
+        - bsconfig.json
+      scope: source.rescript

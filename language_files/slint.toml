@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['slint']
+injection-regex = 'slint'
+language-servers = ['slint-lsp']
+name = 'slint'
+scope = 'source.slint'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

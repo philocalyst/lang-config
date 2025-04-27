@@ -1,0 +1,17 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: docker-compose.yaml
+        - glob: docker-compose.yml
+      grammar: yaml
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - docker-compose-langserver
+        - yaml-language-server
+      name: docker-compose
+      roots:
+        - docker-compose.yaml
+        - docker-compose.yml
+      scope: source.yaml.docker-compose

@@ -1,0 +1,9 @@
+language:
+    - file-types:
+        - pem
+        - cert
+        - crt
+      grammar: pem
+      injection-regex: pem
+      name: pem
+      scope: source.pem

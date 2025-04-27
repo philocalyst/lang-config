@@ -1,0 +1,15 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['bicep', 'bicepparam']
+language-servers = ['bicep-langserver']
+name = 'bicep'
+scope = 'source.bicep'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = ' '

@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '//'
+file-types = ['prisma']
+injection-regex = 'prisma'
+language-servers = ['prisma-language-server']
+name = 'prisma'
+roots = ['package.json']
+scope = 'source.prisma'
+
+[language.indent]
+tab-width = 2
+unit = '  '

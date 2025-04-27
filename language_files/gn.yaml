@@ -1,0 +1,17 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - gn
+        - gni
+      formatter:
+        args:
+            - format
+            - --stdin
+        command: gn
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: gn
+      name: gn
+      roots: []
+      scope: source.gn

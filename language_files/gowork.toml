@@ -1,0 +1,14 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+injection-regex = 'gowork'
+language-servers = ['gopls']
+name = 'gowork'
+scope = 'source.gowork'
+
+[[language.file-types]]
+glob = 'go.work'
+
+[language.indent]
+tab-width = 4
+unit = '	'

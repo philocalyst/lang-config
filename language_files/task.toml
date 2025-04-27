@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '#'
+file-types = ['task']
+injection-regex = 'task'
+name = 'task'
+scope = 'source.task'
+
+[language.indent]
+tab-width = 2
+unit = '  '

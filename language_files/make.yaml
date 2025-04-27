@@ -1,0 +1,19 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: Makefile
+        - glob: makefile
+        - make
+        - mk
+        - mak
+        - glob: GNUmakefile
+        - glob: OCamlMakefile
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: (make|makefile|Makefile|mk)
+      name: make
+      scope: source.make
+      shebangs:
+        - make
+        - gmake

@@ -1,0 +1,15 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - slint
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: slint
+      language-servers:
+        - slint-lsp
+      name: slint
+      scope: source.slint

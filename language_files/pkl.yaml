@@ -1,0 +1,13 @@
+language:
+    - comment-token: //
+      file-types:
+        - pkl
+        - pcf
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: pkl
+      language-servers:
+        - pkl-lsp
+      name: pkl
+      scope: source.pkl

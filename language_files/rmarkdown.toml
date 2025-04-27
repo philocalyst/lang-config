@@ -1,0 +1,16 @@
+[[language]]
+file-types = ['rmd', 'Rmd']
+grammar = 'markdown'
+injection-regex = '(r|R)md'
+language-id = 'rmd'
+language-servers = ['r']
+name = 'rmarkdown'
+scope = 'source.rmd'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

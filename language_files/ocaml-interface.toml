@@ -1,0 +1,21 @@
+[[language]]
+comment-token = '(**)'
+file-types = ['mli']
+language-servers = ['ocamllsp']
+name = 'ocaml-interface'
+scope = 'source.ocaml.interface'
+shebangs = []
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*)'
+start = '(*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

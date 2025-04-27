@@ -1,0 +1,15 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - sol
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: (sol|solidity)
+      language-servers:
+        - solc
+      name: solidity
+      scope: source.sol

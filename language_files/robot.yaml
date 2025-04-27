@@ -1,0 +1,13 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - robot
+        - resource
+      indent:
+        tab-width: 4
+        unit: ' '
+      injection-regex: robot
+      language-servers:
+        - robotframework_ls
+      name: robot
+      scope: source.robot

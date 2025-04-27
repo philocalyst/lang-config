@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['s']
+injection-regex = 'gas'
+language-servers = ['asm-lsp']
+name = 'gas'
+scope = 'source.gas'
+
+[language.indent]
+tab-width = 8
+unit = '        '

@@ -1,0 +1,21 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - v
+        - vv
+        - vsh
+      indent:
+        tab-width: 4
+        unit: "\t"
+      language-servers:
+        - vlang-language-server
+      name: v
+      roots:
+        - v.mod
+      scope: source.v
+      shebangs:
+        - v run

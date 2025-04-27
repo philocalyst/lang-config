@@ -1,0 +1,23 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: '*)'
+        start: (*
+      file-types:
+        - ml
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: ocaml
+      language-servers:
+        - ocamllsp
+      name: ocaml
+      scope: source.ocaml
+      shebangs:
+        - ocaml
+        - ocamlrun
+        - ocamlscript

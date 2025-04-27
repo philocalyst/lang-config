@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['cue']
+injection-regex = 'cue'
+language-servers = ['cuelsp']
+name = 'cue'
+roots = ['cue.mod']
+scope = 'source.cue'
+
+[language.formatter]
+args = ['fmt', '-']
+command = 'cue'
+
+[language.indent]
+tab-width = 4
+unit = '	'

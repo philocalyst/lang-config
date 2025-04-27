@@ -1,0 +1,16 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - just
+        - glob: justfile
+        - glob: Justfile
+        - glob: .justfile
+        - glob: .Justfile
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: just
+      language-servers:
+        - just-lsp
+      name: just
+      scope: source.just

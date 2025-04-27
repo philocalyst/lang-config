@@ -1,0 +1,15 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        <: '>'
+        '{': '}'
+      comment-token: //
+      file-types:
+        - adl
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: adl
+      name: adl
+      roots: []
+      scope: source.adl

@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '//'
+file-types = ['qnt']
+language-servers = ['quint-language-server']
+name = 'quint'
+scope = 'source.quint'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

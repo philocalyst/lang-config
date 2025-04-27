@@ -1,0 +1,23 @@
+[[language]]
+comment-token = '//'
+file-types = ['gts']
+grammar = 'typescript'
+language-servers = [{except-features = ['format', 'diagnostics'], name = 'typescript-language-server'}, 'vscode-eslint-language-server', 'ember-language-server']
+name = 'gts'
+roots = ['package.json', 'ember-cli-build.js']
+scope = 'source.gts'
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'<' = '>'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,14 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: meson.build
+        - glob: meson.options
+        - glob: meson_options.txt
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: meson
+      language-servers:
+        - mesonlsp
+      name: meson
+      scope: source.meson

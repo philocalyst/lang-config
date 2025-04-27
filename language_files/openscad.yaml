@@ -1,0 +1,15 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - scad
+      indent:
+        tab-width: 2
+        unit: "\t"
+      injection-regex: openscad
+      language-servers:
+        - openscad-lsp
+      name: openscad
+      scope: source.openscad

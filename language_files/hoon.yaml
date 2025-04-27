@@ -1,0 +1,10 @@
+language:
+    - comment-token: '::'
+      file-types:
+        - hoon
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: hoon
+      name: hoon
+      scope: source.hoon

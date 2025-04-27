@@ -1,0 +1,11 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - nt
+      grammar: yaml
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: nestedtext
+      name: nestedtext
+      scope: text.nested

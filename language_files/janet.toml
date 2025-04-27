@@ -1,0 +1,23 @@
+[[language]]
+comment-token = '#'
+file-types = ['cgen', 'janet', 'jdn']
+grammar = 'janet-simple'
+injection-regex = 'janet'
+name = 'janet'
+roots = ['project.janet']
+scope = 'source.janet'
+shebangs = ['janet']
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'`' = '`'
+'{' = '}'
+
+[language.formatter]
+command = 'janet-format'
+
+[language.indent]
+tab-width = 2
+unit = '  '

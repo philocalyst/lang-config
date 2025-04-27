@@ -1,0 +1,22 @@
+language:
+    - comment-token: '%%'
+      file-types:
+        - erl
+        - hrl
+        - app
+        - glob: rebar.config
+        - glob: rebar.lock
+        - glob: '*.app.src'
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: erl(ang)?
+      language-servers:
+        - erlang-ls
+        - elp
+      name: erlang
+      roots:
+        - rebar.config
+      scope: source.erlang
+      shebangs:
+        - escript

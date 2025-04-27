@@ -1,0 +1,14 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - elv
+      grammar: elvish
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - elvish
+      name: elvish
+      scope: source.elvish
+      shebangs:
+        - elvish

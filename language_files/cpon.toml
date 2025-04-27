@@ -1,0 +1,11 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['cpon', 'cp']
+injection-regex = 'cpon'
+name = 'cpon'
+scope = 'scope.cpon'
+
+[language.indent]
+tab-width = 2
+unit = '  '

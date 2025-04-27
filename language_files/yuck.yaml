@@ -1,0 +1,10 @@
+language:
+    - comment-token: ;
+      file-types:
+        - yuck
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: yuck
+      name: yuck
+      scope: source.yuck

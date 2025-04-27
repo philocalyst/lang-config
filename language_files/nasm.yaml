@@ -1,0 +1,14 @@
+language:
+    - comment-token: ;
+      file-types:
+        - asm
+        - S
+        - nasm
+      indent:
+        tab-width: 8
+        unit: '        '
+      injection-regex: n?asm
+      language-servers:
+        - asm-lsp
+      name: nasm
+      scope: source.nasm

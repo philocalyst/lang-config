@@ -1,0 +1,13 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - bb
+        - bbappend
+        - bbclass
+        - glob: conf/*.conf
+        - glob: conf/*/*.{inc,conf}
+        - glob: recipe-*/*/*.inc
+      language-servers:
+        - bitbake-language-server
+      name: bitbake
+      scope: source.bitbake

@@ -1,0 +1,11 @@
+[[language]]
+comment-token = ';'
+file-types = ['asm', 'S', 'nasm']
+injection-regex = 'n?asm'
+language-servers = ['asm-lsp']
+name = 'nasm'
+scope = 'source.nasm'
+
+[language.indent]
+tab-width = 8
+unit = '        '

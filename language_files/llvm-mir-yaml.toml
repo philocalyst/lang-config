@@ -1,0 +1,9 @@
+[[language]]
+comment-token = '#'
+file-types = ['mir']
+name = 'llvm-mir-yaml'
+scope = 'source.yaml'
+
+[language.indent]
+tab-width = 2
+unit = '  '

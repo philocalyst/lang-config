@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['swift', 'swiftinterface']
+injection-regex = 'swift'
+language-servers = ['sourcekit-lsp']
+name = 'swift'
+roots = ['Package.swift']
+scope = 'source.swift'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.formatter]
+command = 'swift-format'

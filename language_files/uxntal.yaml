@@ -1,0 +1,10 @@
+language:
+    - auto-format: false
+      block-comment-tokens:
+        end: )
+        start: (
+      file-types:
+        - tal
+      injection-regex: tal
+      name: uxntal
+      scope: source.tal

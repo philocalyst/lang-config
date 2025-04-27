@@ -1,0 +1,14 @@
+language:
+    - auto-format: true
+      comment-token: '#'
+      file-types:
+        - txtpb
+        - textpb
+        - textproto
+      formatter:
+        command: txtpbfmt
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: textproto
+      scope: source.textproto

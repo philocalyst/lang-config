@@ -1,0 +1,12 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - s
+      indent:
+        tab-width: 8
+        unit: '        '
+      injection-regex: gas
+      language-servers:
+        - asm-lsp
+      name: gas
+      scope: source.gas

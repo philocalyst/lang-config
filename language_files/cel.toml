@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '//'
+file-types = ['cel']
+injection-regex = 'cel'
+name = 'cel'
+scope = 'source.cel'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,25 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '`': '`'
+        '{': '}'
+      comment-token: '#'
+      file-types:
+        - cgen
+        - janet
+        - jdn
+      formatter:
+        command: janet-format
+      grammar: janet-simple
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: janet
+      name: janet
+      roots:
+        - project.janet
+      scope: source.janet
+      shebangs:
+        - janet

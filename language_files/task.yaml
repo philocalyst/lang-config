@@ -1,0 +1,10 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - task
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: task
+      name: task
+      scope: source.task

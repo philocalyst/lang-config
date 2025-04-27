@@ -1,0 +1,10 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - fga
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: fga
+      name: fga
+      scope: source.fga

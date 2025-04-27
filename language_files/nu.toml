@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '#'
+file-types = ['nu', 'nuon']
+injection-regex = 'nu'
+language-servers = ['nu-lsp']
+name = 'nu'
+scope = 'source.nu'
+shebangs = ['nu']
+
+[language.indent]
+tab-width = 2
+unit = '  '

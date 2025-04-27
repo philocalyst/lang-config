@@ -1,0 +1,15 @@
+[[language]]
+comment-tokens = '--'
+file-types = ['gren']
+injection-regex = 'gren'
+name = 'gren'
+roots = ['gren.json']
+scope = 'source.gren'
+
+[language.block-comment-tokens]
+end = '-}'
+start = '{-'
+
+[language.indent]
+tab-width = 4
+unit = '    '

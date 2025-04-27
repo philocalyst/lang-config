@@ -1,0 +1,12 @@
+language:
+    - comment-token: //
+      file-types:
+        - scd
+        - sc
+        - quark
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: supercollider
+      name: supercollider
+      scope: source.supercollider

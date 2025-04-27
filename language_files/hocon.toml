@@ -1,0 +1,18 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+name = 'hocon'
+scope = 'source.conf'
+
+[[language.file-types]]
+glob = '**/src/*/resources/**/*.conf'
+
+[[language.file-types]]
+glob = '*scalafmt*.conf'
+
+[[language.file-types]]
+glob = '*scalafix*.conf'
+
+[language.indent]
+tab-width = 2
+unit = '  '

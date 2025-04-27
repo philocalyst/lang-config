@@ -1,0 +1,24 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        '''': ''''
+        (: )
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: ']#'
+        start: '#['
+      comment-token: '#'
+      file-types:
+        - nim
+        - nims
+        - nimble
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: nim
+      language-servers:
+        - nimlangserver
+      name: nim
+      scope: source.nim
+      shebangs: []

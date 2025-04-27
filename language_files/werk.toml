@@ -1,0 +1,9 @@
+[[language]]
+comment-token = '#'
+file-types = ['werk', {glob = 'Werkfile'}]
+name = 'werk'
+scope = 'source.werk'
+
+[language.indent]
+tab-width = 2
+unit = '  '

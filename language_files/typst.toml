@@ -1,0 +1,22 @@
+[[language]]
+comment-token = '//'
+file-types = ['typst', 'typ']
+injection-regex = 'typ(st)?'
+language-servers = ['tinymist']
+name = 'typst'
+scope = 'source.typst'
+
+[language.auto-pairs]
+'"' = '"'
+'$' = '$'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,23 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+      comment-token: ;
+      file-types:
+        - glob: queries/*.scm
+        - glob: injections.scm
+        - glob: highlights.scm
+        - glob: indents.scm
+        - glob: textobjects.scm
+        - glob: locals.scm
+        - glob: tags.scm
+      grammar: query
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: tsq
+      language-servers:
+        - ts_query_ls
+      name: tsq
+      scope: source.tsq

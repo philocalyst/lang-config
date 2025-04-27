@@ -1,0 +1,19 @@
+language:
+    - block-comment-tokens:
+        end: -}
+        start: '{-'
+      comment-token: --
+      file-types:
+        - dhall
+      formatter:
+        args:
+            - format
+        command: dhall
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: dhall
+      language-servers:
+        - dhall-lsp-server
+      name: dhall
+      scope: source.dhall

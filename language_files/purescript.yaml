@@ -1,0 +1,24 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: -}
+        start: '{-'
+      comment-token: --
+      file-types:
+        - purs
+      formatter:
+        args:
+            - format
+        command: purs-tidy
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: purescript
+      language-servers:
+        - purescript-language-server
+      name: purescript
+      roots:
+        - spago.yaml
+        - spago.dhall
+        - bower.json
+      scope: source.purescript

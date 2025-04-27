@@ -1,0 +1,11 @@
+language:
+    - block-comment-tokens:
+        end: '#}}'
+        start: '{{#'
+      file-types:
+        - vto
+      indent:
+        tab-width: 4
+        unit: '    '
+      name: vento
+      scope: text.html.vto

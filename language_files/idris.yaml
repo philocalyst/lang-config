@@ -1,0 +1,16 @@
+language:
+    - block-comment-tokens:
+        end: -}
+        start: '{-'
+      comment-token: --
+      file-types:
+        - idr
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: idr
+      language-servers:
+        - idris2-lsp
+      name: idris
+      scope: source.idr
+      shebangs: []

@@ -1,0 +1,17 @@
+language:
+    - block-comment-tokens:
+        end: '*)'
+        start: (*
+      comment-tokens: \*
+      file-types:
+        - tla
+      formatter:
+        args:
+            - --stdin
+        command: tlafmt
+      indent:
+        tab-width: 4
+        unit: ' '
+      injection-regex: tla
+      name: tlaplus
+      scope: scope.tlaplus

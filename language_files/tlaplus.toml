@@ -1,0 +1,18 @@
+[[language]]
+comment-tokens = '\*'
+file-types = ['tla']
+injection-regex = 'tla'
+name = 'tlaplus'
+scope = 'scope.tlaplus'
+
+[language.block-comment-tokens]
+end = '*)'
+start = '(*'
+
+[language.formatter]
+args = ['--stdin']
+command = 'tlafmt'
+
+[language.indent]
+tab-width = 4
+unit = ' '

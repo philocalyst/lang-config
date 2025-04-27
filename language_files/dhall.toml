@@ -1,0 +1,19 @@
+[[language]]
+comment-token = '--'
+file-types = ['dhall']
+injection-regex = 'dhall'
+language-servers = ['dhall-lsp-server']
+name = 'dhall'
+scope = 'source.dhall'
+
+[language.block-comment-tokens]
+end = '-}'
+start = '{-'
+
+[language.formatter]
+args = ['format']
+command = 'dhall'
+
+[language.indent]
+tab-width = 2
+unit = '  '

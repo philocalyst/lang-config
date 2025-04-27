@@ -1,0 +1,25 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        '''': ''''
+        (: )
+        <: '>'
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - proj
+        - vbproj
+        - csproj
+        - fsproj
+        - targets
+        - props
+      grammar: xml
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: msbuild
+      name: msbuild
+      scope: source.msbuild

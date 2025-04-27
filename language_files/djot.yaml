@@ -1,0 +1,13 @@
+language:
+    - block-comment-tokens:
+        end: '%}'
+        start: '{%'
+      file-types:
+        - dj
+        - djot
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: dj|djot
+      name: djot
+      scope: source.djot

@@ -1,0 +1,29 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        '''': ''''
+        (: )
+        <: '>'
+        '{': '}'
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - gjs
+      grammar: javascript
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - except-features:
+            - format
+            - diagnostics
+          name: typescript-language-server
+        - vscode-eslint-language-server
+        - ember-language-server
+      name: gjs
+      roots:
+        - package.json
+        - ember-cli-build.js
+      scope: source.gjs

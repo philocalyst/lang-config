@@ -1,0 +1,12 @@
+[[language]]
+file-types = ['vto']
+name = 'vento'
+scope = 'text.html.vto'
+
+[language.block-comment-tokens]
+end = '#}}'
+start = '{{#'
+
+[language.indent]
+tab-width = 4
+unit = '    '

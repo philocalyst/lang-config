@@ -1,0 +1,24 @@
+[[language]]
+file-types = ['tera']
+name = 'tera'
+scope = 'source.tera'
+
+[[language.block-comment-tokens]]
+end = '#}'
+start = '{#'
+
+[[language.block-comment-tokens]]
+end = '-#}'
+start = '{#-'
+
+[[language.block-comment-tokens]]
+end = '-#}'
+start = '{#'
+
+[[language.block-comment-tokens]]
+end = '#}'
+start = '{#-'
+
+[language.indent]
+tab-width = 4
+unit = '    '

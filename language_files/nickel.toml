@@ -1,0 +1,18 @@
+[[language]]
+comment-token = '#'
+file-types = ['ncl']
+injection-regex = 'nickel'
+language-servers = ['nls']
+name = 'nickel'
+scope = 'source.nickel'
+shebangs = []
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.indent]
+tab-width = 2
+unit = '  '

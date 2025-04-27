@@ -1,0 +1,10 @@
+[[language]]
+comment-tokens = '#'
+file-types = ['cylc', {glob = 'suite.rc'}]
+injection-regex = 'cylc'
+name = 'cylc'
+scope = 'source.cylc'
+
+[language.indent]
+tab-width = 4
+unit = '    '

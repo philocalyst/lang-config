@@ -1,0 +1,14 @@
+language:
+    - comment-token: --
+      file-types:
+        - gpr
+      indent:
+        tab-width: 3
+        unit: '   '
+      injection-regex: gpr
+      language-servers:
+        - ada-gpr-language-server
+      name: gpr
+      roots:
+        - alire.toml
+      scope: source.gpr

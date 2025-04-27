@@ -1,0 +1,14 @@
+[[language]]
+file-types = ['ejs']
+grammar = 'embedded-template'
+injection-regex = 'ejs'
+name = 'ejs'
+scope = 'text.html.ejs'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

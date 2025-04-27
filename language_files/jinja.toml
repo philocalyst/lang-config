@@ -1,0 +1,14 @@
+[[language]]
+file-types = ['jinja', 'jinja2', 'j2']
+grammar = 'jinja2'
+injection-regex = 'jinja'
+name = 'jinja'
+scope = 'text.html.jinja'
+
+[language.block-comment-tokens]
+end = '#}'
+start = '{#'
+
+[language.indent]
+tab-width = 2
+unit = '  '

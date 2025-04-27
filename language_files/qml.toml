@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['qml']
+grammar = 'qmljs'
+language-servers = ['qmlls']
+name = 'qml'
+scope = 'source.qml'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

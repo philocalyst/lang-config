@@ -1,0 +1,14 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: templates/*.yaml
+        - glob: templates/*.yml
+        - glob: templates/_*.tpl
+        - glob: templates/NOTES.txt
+      grammar: gotmpl
+      language-servers:
+        - helm_ls
+      name: helm
+      roots:
+        - Chart.yaml
+      scope: source.helm

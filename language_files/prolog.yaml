@@ -1,0 +1,14 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: '%'
+      file-types:
+        - pl
+        - prolog
+      language-servers:
+        - swipl
+      name: prolog
+      scope: source.prolog
+      shebangs:
+        - swipl

@@ -1,0 +1,12 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - hurl
+      formatter:
+        command: hurlfmt
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: hurl
+      name: hurl
+      scope: source.hurl

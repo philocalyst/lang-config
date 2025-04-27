@@ -1,0 +1,19 @@
+[[language]]
+auto-format = false
+comment-token = '--'
+file-types = ['agda']
+injection-regex = 'agda'
+name = 'agda'
+roots = []
+scope = 'source.agda'
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.indent]
+tab-width = 2
+unit = '  '

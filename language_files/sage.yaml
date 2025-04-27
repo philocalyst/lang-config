@@ -1,0 +1,11 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - sage
+      grammar: python
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: sage
+      name: sage
+      scope: source.sage

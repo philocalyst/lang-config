@@ -1,0 +1,50 @@
+[[language]]
+comment-token = '//'
+file-types = ['c']
+injection-regex = 'c'
+language-servers = ['clangd']
+name = 'c'
+scope = 'source.c'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.debugger]
+command = 'lldb-dap'
+name = 'lldb-dap'
+transport = 'stdio'
+
+[[language.debugger.templates]]
+name = 'binary'
+request = 'launch'
+
+[language.debugger.templates.args]
+console = 'internalConsole'
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'binary'
+
+[[language.debugger.templates]]
+completion = ['pid']
+name = 'attach'
+request = 'attach'
+
+[language.debugger.templates.args]
+console = 'internalConsole'
+pid = '{0}'
+
+[[language.debugger.templates]]
+completion = [{default = 'connect://localhost:3333', name = 'lldb connect url'}, {completion = 'filename', name = 'file'}, 'pid']
+name = 'gdbserver attach'
+request = 'attach'
+
+[language.debugger.templates.args]
+attachCommands = ['platform select remote-gdb-server', 'platform connect {0}', 'file {1}', 'attach {2}']
+console = 'internalConsole'
+
+[language.indent]
+tab-width = 2
+unit = '  '

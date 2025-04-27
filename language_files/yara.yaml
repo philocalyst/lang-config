@@ -1,0 +1,15 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-tokens: //
+      file-types:
+        - yara
+        - yar
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - yls
+      name: yara
+      scope: source.yara

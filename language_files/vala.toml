@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['vala', 'vapi']
+injection-regex = 'vala'
+language-servers = ['vala-language-server']
+name = 'vala'
+scope = 'source.vala'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

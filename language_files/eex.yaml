@@ -1,0 +1,15 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - eex
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: eex
+      name: eex
+      roots:
+        - mix.exs
+        - mix.lock
+      scope: source.eex

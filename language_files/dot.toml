@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['dot']
+injection-regex = 'dot'
+language-servers = ['dot-language-server']
+name = 'dot'
+scope = 'source.dot'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '//'
+file-types = ['ron']
+injection-regex = 'ron'
+name = 'ron'
+scope = 'source.ron'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

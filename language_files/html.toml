@@ -1,0 +1,15 @@
+[[language]]
+auto-format = true
+file-types = ['html', 'htm', 'shtml', 'xhtml', 'xht', 'jsp', 'asp', 'aspx', 'jshtm', 'volt', 'rhtml', 'cshtml']
+injection-regex = 'html'
+language-servers = ['vscode-html-language-server', 'superhtml']
+name = 'html'
+scope = 'text.html.basic'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

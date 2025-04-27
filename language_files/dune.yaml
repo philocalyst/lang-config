@@ -1,0 +1,23 @@
+language:
+    - auto-format: true
+      auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      comment-token: ;
+      file-types:
+        - glob: dune-project
+        - glob: dune
+      formatter:
+        args:
+            - format-dune-file
+        command: dune
+      grammar: scheme
+      indent:
+        tab-width: 1
+        unit: ' '
+      name: dune
+      roots:
+        - dune-project
+      scope: source.dune

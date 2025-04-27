@@ -1,0 +1,16 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - bicep
+        - bicepparam
+      indent:
+        tab-width: 2
+        unit: ' '
+      language-servers:
+        - bicep-langserver
+      name: bicep
+      scope: source.bicep

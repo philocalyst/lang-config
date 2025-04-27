@@ -1,0 +1,13 @@
+[[language]]
+comment-token = '//'
+file-types = ['wesl']
+name = 'wesl'
+scope = 'source.wesl'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

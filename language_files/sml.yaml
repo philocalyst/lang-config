@@ -1,0 +1,14 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: '*)'
+        start: (*
+      file-types:
+        - sml
+      injection-regex: sml
+      name: sml
+      scope: source.sml

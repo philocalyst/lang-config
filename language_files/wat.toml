@@ -1,0 +1,10 @@
+[[language]]
+comment-token = ';;'
+file-types = ['wat']
+language-servers = ['wasm-language-tools']
+name = 'wat'
+scope = 'source.wat'
+
+[language.block-comment-tokens]
+end = ';)'
+start = '(;'

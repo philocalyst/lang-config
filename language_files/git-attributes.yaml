@@ -1,0 +1,8 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: .gitattributes
+      grammar: gitattributes
+      injection-regex: git-attributes
+      name: git-attributes
+      scope: source.gitattributes

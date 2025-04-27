@@ -1,0 +1,23 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-tokens:
+        - //
+        - ///
+        - //!
+      file-types:
+        - pest
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: pest
+      language-servers:
+        - pest-language-server
+      name: pest
+      scope: source.pest

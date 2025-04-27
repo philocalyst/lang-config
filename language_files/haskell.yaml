@@ -1,0 +1,21 @@
+language:
+    - block-comment-tokens:
+        end: -}
+        start: '{-'
+      comment-token: --
+      file-types:
+        - hs
+        - hs-boot
+        - hsc
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: hs|haskell
+      language-servers:
+        - haskell-language-server
+      name: haskell
+      roots:
+        - Setup.hs
+        - stack.yaml
+        - cabal.project
+      scope: source.haskell

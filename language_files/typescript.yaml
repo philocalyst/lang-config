@@ -1,0 +1,25 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - ts
+        - mts
+        - cts
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (ts|typescript)
+      language-id: typescript
+      language-servers:
+        - typescript-language-server
+      name: typescript
+      roots:
+        - package.json
+        - tsconfig.json
+      scope: source.ts
+      shebangs:
+        - deno
+        - bun
+        - ts-node

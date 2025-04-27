@@ -1,0 +1,18 @@
+[[language]]
+comment-token = ';'
+file-types = ['lisp', 'asd', 'cl', 'l', 'lsp', 'ny', 'podsl', 'sexp']
+grammar = 'scheme'
+language-servers = ['cl-lsp']
+name = 'common-lisp'
+scope = 'source.lisp'
+shebangs = ['lisp', 'sbcl', 'ccl', 'clisp', 'ecl']
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.indent]
+tab-width = 2
+unit = '  '

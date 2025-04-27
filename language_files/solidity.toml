@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['sol']
+injection-regex = '(sol|solidity)'
+language-servers = ['solc']
+name = 'solidity'
+scope = 'source.sol'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

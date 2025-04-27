@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '#'
+file-types = ['gql', 'graphql', 'graphqls']
+injection-regex = 'graphql'
+language-servers = ['graphql-language-service']
+name = 'graphql'
+scope = 'source.graphql'
+
+[language.block-comment-tokens]
+end = '"""'
+start = '"""'
+
+[language.indent]
+tab-width = 2
+unit = '  '

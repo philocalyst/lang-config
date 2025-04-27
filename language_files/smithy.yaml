@@ -1,0 +1,14 @@
+language:
+    - comment-token: //
+      file-types:
+        - smithy
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: smithy
+      language-servers:
+        - cs
+      name: smithy
+      roots:
+        - smithy-build.json
+      scope: source.smithy

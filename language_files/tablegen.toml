@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '//'
+file-types = ['td']
+injection-regex = 'tablegen'
+name = 'tablegen'
+scope = 'source.tablegen'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

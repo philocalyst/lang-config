@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['v', 'vv', 'vsh']
+language-servers = ['vlang-language-server']
+name = 'v'
+roots = ['v.mod']
+scope = 'source.v'
+shebangs = ['v run']
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '	'

@@ -1,0 +1,15 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        <: '>'
+        '{': '}'
+      comment-token: //
+      file-types:
+        - fidl
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: fidl
+      name: fidl
+      scope: source.fidl

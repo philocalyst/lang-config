@@ -1,0 +1,18 @@
+language:
+    - auto-format: true
+      comment-token: '#'
+      file-types:
+        - inko
+      formatter:
+        args:
+            - fmt
+            - '-'
+        command: inko
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: inko
+      name: inko
+      roots:
+        - inko.pkg
+      scope: source.inko

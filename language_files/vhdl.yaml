@@ -1,0 +1,13 @@
+language:
+    - comment-token: --
+      file-types:
+        - vhd
+        - vhdl
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: vhdl
+      language-servers:
+        - vhdl_ls
+      name: vhdl
+      scope: source.vhdl

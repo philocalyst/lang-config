@@ -1,0 +1,19 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - tsx
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (tsx)
+      language-id: typescriptreact
+      language-servers:
+        - typescript-language-server
+      name: tsx
+      roots:
+        - package.json
+        - tsconfig.json
+      scope: source.tsx

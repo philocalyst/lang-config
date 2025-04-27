@@ -1,0 +1,19 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - jsonc
+        - glob: tsconfig.json
+        - glob: bun.lock
+      grammar: json
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: jsonc
+      language-servers:
+        - vscode-json-language-server
+      name: jsonc
+      scope: source.json

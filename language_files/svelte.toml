@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['svelte']
+injection-regex = 'svelte'
+language-servers = ['svelteserver']
+name = 'svelte'
+scope = 'source.svelte'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,16 @@
+[[language]]
+file-types = ['dtd', 'ent']
+injection-regex = 'dtd'
+name = 'dtd'
+scope = 'source.dtd'
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'<' = '>'
+'[' = ']'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,16 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        '''': ''''
+        (: )
+        <: '>'
+        '[': ']'
+      file-types:
+        - dtd
+        - ent
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: dtd
+      name: dtd
+      scope: source.dtd

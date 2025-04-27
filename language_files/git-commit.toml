@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '#'
+name = 'git-commit'
+rulers = [51, 73]
+scope = 'git.commitmsg'
+text-width = 72
+
+[[language.file-types]]
+glob = 'COMMIT_EDITMSG'
+
+[[language.file-types]]
+glob = 'MERGE_MSG'
+
+[language.indent]
+tab-width = 2
+unit = '  '

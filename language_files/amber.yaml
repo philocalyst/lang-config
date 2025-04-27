@@ -1,0 +1,11 @@
+language:
+    - comment-token:
+        - //
+        - ///
+      file-types:
+        - ab
+      indent:
+        tab-width: 4
+        unit: '    '
+      name: amber
+      scope: source.ab

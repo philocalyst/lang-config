@@ -1,0 +1,9 @@
+language:
+    - auto-format: true
+      file-types:
+        - glob: '*.todo.txt'
+        - todotxt
+      formatter:
+        command: sort
+      name: todotxt
+      scope: text.todotxt

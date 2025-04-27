@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['pl', 'pm', 't', 'psgi', 'raku', 'rakumod', 'rakutest', 'rakudoc', 'nqp', 'p6', 'pl6', 'pm6']
+language-servers = ['perlnavigator']
+name = 'perl'
+scope = 'source.perl'
+shebangs = ['perl']
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,9 @@
+language:
+    - comment-token: --
+      file-types:
+        - persistentmodels
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: haskell-persistent
+      scope: source.persistentmodels

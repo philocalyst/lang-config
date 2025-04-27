@@ -1,0 +1,12 @@
+[[language]]
+comment-tokens = '--'
+file-types = ['tl']
+injection-regex = 'teal'
+language-servers = ['teal-language-server']
+name = 'teal'
+roots = ['tlconfig.lua']
+scope = 'source.tl'
+
+[language.block-comment-tokens]
+end = '--]]'
+start = '--[['

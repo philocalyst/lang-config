@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['awk', 'gawk', 'nawk', 'mawk']
+injection-regex = 'awk'
+language-servers = ['awk-language-server']
+name = 'awk'
+scope = 'source.awk'
+
+[language.indent]
+tab-width = 2
+unit = '  '

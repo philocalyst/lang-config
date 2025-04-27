@@ -1,0 +1,17 @@
+language:
+    - auto-format: true
+      comment-token: '#'
+      file-types:
+        - fish
+      formatter:
+        command: fish_indent
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: fish
+      language-servers:
+        - fish-lsp
+      name: fish
+      scope: source.fish
+      shebangs:
+        - fish

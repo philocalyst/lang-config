@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['v', 'vh', 'sv', 'svh']
+injection-regex = 'verilog'
+language-servers = ['svlangserver']
+name = 'verilog'
+scope = 'source.verilog'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

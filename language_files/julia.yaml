@@ -1,0 +1,20 @@
+language:
+    - block-comment-tokens:
+        end: =#
+        start: '#='
+      comment-token: '#'
+      file-types:
+        - jl
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: julia
+      language-servers:
+        - julia
+      name: julia
+      roots:
+        - Manifest.toml
+        - Project.toml
+      scope: source.julia
+      shebangs:
+        - julia

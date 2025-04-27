@@ -1,0 +1,11 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - smali
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: smali
+      name: smali
+      roots: []
+      scope: source.smali

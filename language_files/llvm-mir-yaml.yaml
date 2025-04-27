@@ -1,0 +1,9 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - mir
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: llvm-mir-yaml
+      scope: source.yaml

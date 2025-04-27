@@ -1,0 +1,18 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - proto
+      grammar: proto
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: proto
+      language-servers:
+        - buf
+        - pbkit
+        - protols
+      name: protobuf
+      scope: source.proto

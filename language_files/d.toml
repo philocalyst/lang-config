@@ -1,0 +1,18 @@
+[[language]]
+comment-token = '//'
+file-types = ['d', 'dd']
+injection-regex = 'd'
+language-servers = ['serve-d']
+name = 'd'
+scope = 'source.d'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.formatter]
+command = 'dfmt'
+
+[language.indent]
+tab-width = 4
+unit = '    '

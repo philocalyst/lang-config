@@ -1,0 +1,7 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - ldif
+      injection-regex: ldif
+      name: ldif
+      scope: source.ldif

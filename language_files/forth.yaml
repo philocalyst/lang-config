@@ -1,0 +1,15 @@
+language:
+    - comment-token: \
+      file-types:
+        - fs
+        - forth
+        - fth
+        - 4th
+      indent:
+        tab-width: 3
+        unit: '   '
+      injection-regex: forth
+      language-servers:
+        - forth-lsp
+      name: forth
+      scope: source.forth

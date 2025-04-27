@@ -1,0 +1,5 @@
+language:
+    - file-types:
+        - csv
+      name: csv
+      scope: source.csv

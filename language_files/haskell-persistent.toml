@@ -1,0 +1,9 @@
+[[language]]
+comment-token = '--'
+file-types = ['persistentmodels']
+name = 'haskell-persistent'
+scope = 'source.persistentmodels'
+
+[language.indent]
+tab-width = 2
+unit = '  '

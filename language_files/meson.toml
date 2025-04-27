@@ -1,0 +1,19 @@
+[[language]]
+comment-token = '#'
+injection-regex = 'meson'
+language-servers = ['mesonlsp']
+name = 'meson'
+scope = 'source.meson'
+
+[[language.file-types]]
+glob = 'meson.build'
+
+[[language.file-types]]
+glob = 'meson.options'
+
+[[language.file-types]]
+glob = 'meson_options.txt'
+
+[language.indent]
+tab-width = 2
+unit = '  '

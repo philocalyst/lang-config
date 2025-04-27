@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '#'
+file-types = ['nix']
+injection-regex = 'nix'
+language-servers = ['nil', 'nixd']
+name = 'nix'
+scope = 'source.nix'
+shebangs = []
+
+[language.indent]
+tab-width = 2
+unit = '  '

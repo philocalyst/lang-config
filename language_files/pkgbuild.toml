@@ -1,0 +1,9 @@
+[[language]]
+comment-token = '#'
+grammar = 'bash'
+language-servers = ['termux-language-server', {except-features = ['diagnostics'], name = 'bash-language-server'}]
+name = 'pkgbuild'
+scope = 'source.bash'
+
+[[language.file-types]]
+glob = 'PKGBUILD'

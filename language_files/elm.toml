@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '--'
+file-types = ['elm']
+injection-regex = 'elm'
+language-servers = ['elm-language-server']
+name = 'elm'
+roots = ['elm.json']
+scope = 'source.elm'
+
+[language.block-comment-tokens]
+end = '-}'
+start = '{-'
+
+[language.indent]
+tab-width = 4
+unit = '    '

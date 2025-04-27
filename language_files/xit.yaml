@@ -1,0 +1,9 @@
+language:
+    - file-types:
+        - xit
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: xit
+      name: xit
+      scope: source.xit

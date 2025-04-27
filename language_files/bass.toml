@@ -1,0 +1,11 @@
+[[language]]
+comment-token = ';'
+file-types = ['bass']
+injection-regex = 'bass'
+language-servers = ['bass']
+name = 'bass'
+scope = 'source.bass'
+
+[language.indent]
+tab-width = 2
+unit = '  '

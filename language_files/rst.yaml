@@ -1,0 +1,6 @@
+language:
+    - comment-token: ..
+      file-types:
+        - rst
+      name: rst
+      scope: source.rst

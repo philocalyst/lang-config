@@ -1,0 +1,17 @@
+[[language]]
+comment-token = '#'
+file-types = ['jl']
+injection-regex = 'julia'
+language-servers = ['julia']
+name = 'julia'
+roots = ['Manifest.toml', 'Project.toml']
+scope = 'source.julia'
+shebangs = ['julia']
+
+[language.block-comment-tokens]
+end = '=#'
+start = '#='
+
+[language.indent]
+tab-width = 4
+unit = '    '

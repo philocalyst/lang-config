@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['pas', 'pp', 'inc', 'lpr', 'lfm']
+injection-regex = 'pascal'
+language-servers = ['pasls']
+name = 'pascal'
+scope = 'source.pascal'
+
+[language.block-comment-tokens]
+end = '}'
+start = '{'
+
+[language.indent]
+tab-width = 2
+unit = '  '

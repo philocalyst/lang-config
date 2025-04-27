@@ -1,0 +1,9 @@
+language:
+    - comment-tokens: '#'
+      file-types:
+        - dsc
+        - changes
+        - glob: debian/**/control
+        - glob: etc/apt/sources.list.d/*.sources
+      name: debian
+      scope: text.debian

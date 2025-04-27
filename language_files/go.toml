@@ -1,0 +1,88 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['go']
+injection-regex = 'go'
+language-servers = ['gopls', 'golangci-lint-lsp']
+name = 'go'
+roots = ['go.work', 'go.mod']
+scope = 'source.go'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.debugger]
+args = ['dap']
+command = 'dlv'
+name = 'go'
+port-arg = '-l 127.0.0.1:{}'
+transport = 'tcp'
+
+[[language.debugger.templates]]
+name = 'source'
+request = 'launch'
+
+[language.debugger.templates.args]
+mode = 'debug'
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+default = '.'
+name = 'entrypoint'
+
+[[language.debugger.templates]]
+name = 'binary'
+request = 'launch'
+
+[language.debugger.templates.args]
+mode = 'exec'
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'binary'
+
+[[language.debugger.templates]]
+name = 'test'
+request = 'launch'
+
+[language.debugger.templates.args]
+mode = 'test'
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'directory'
+default = '.'
+name = 'tests'
+
+[[language.debugger.templates]]
+completion = ['pid']
+name = 'attach'
+request = 'attach'
+
+[language.debugger.templates.args]
+mode = 'local'
+processId = '{0}'
+
+[[language.debugger.templates]]
+name = 'core'
+request = 'launch'
+
+[language.debugger.templates.args]
+coreFilePath = '{1}'
+mode = 'core'
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'binary'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'core'
+
+[language.indent]
+tab-width = 4
+unit = '	'

@@ -1,0 +1,18 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      comment-token: '#'
+      file-types:
+        - ncl
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: nickel
+      language-servers:
+        - nls
+      name: nickel
+      scope: source.nickel
+      shebangs: []

@@ -1,0 +1,16 @@
+language:
+    - block-comment-tokens:
+        end: ']]'
+        start: '#[['
+      comment-token: '#'
+      file-types:
+        - cmake
+        - glob: CMakeLists.txt
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: cmake
+      language-servers:
+        - cmake-language-server
+      name: cmake
+      scope: source.cmake

@@ -1,0 +1,17 @@
+[[language]]
+comment-token = '//'
+file-types = ['tsx']
+injection-regex = '(tsx)'
+language-id = 'typescriptreact'
+language-servers = ['typescript-language-server']
+name = 'tsx'
+roots = ['package.json', 'tsconfig.json']
+scope = 'source.tsx'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,8 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: .ssh/config
+        - glob: /etc/ssh/ssh_config
+        - glob: ssh_config.d/*.conf
+      name: sshclientconfig
+      scope: source.sshclientconfig

@@ -1,0 +1,13 @@
+language:
+    - comment-token: 'JJ:'
+      file-types:
+        - glob: '*.jjdescription'
+      indent:
+        tab-width: 2
+        unit: '  '
+      name: jjdescription
+      rulers:
+        - 51
+        - 73
+      scope: jj.description
+      text-width: 72

@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['res']
+injection-regex = 'rescript'
+language-servers = ['rescript-language-server']
+name = 'rescript'
+roots = ['bsconfig.json']
+scope = 'source.rescript'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

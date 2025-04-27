@@ -1,0 +1,17 @@
+[[language]]
+comment-token = ';'
+file-types = ['ss', 'scm']
+injection-regex = 'scheme'
+name = 'scheme'
+scope = 'source.scheme'
+shebangs = ['scheme', 'guile', 'chicken']
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.indent]
+tab-width = 2
+unit = '  '

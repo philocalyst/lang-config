@@ -1,0 +1,18 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: -}
+        start: '{-'
+      comment-token: --
+      file-types:
+        - elm
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: elm
+      language-servers:
+        - elm-language-server
+      name: elm
+      roots:
+        - elm.json
+      scope: source.elm

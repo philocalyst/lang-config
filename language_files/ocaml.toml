@@ -1,0 +1,21 @@
+[[language]]
+file-types = ['ml']
+injection-regex = 'ocaml'
+language-servers = ['ocamllsp']
+name = 'ocaml'
+scope = 'source.ocaml'
+shebangs = ['ocaml', 'ocamlrun', 'ocamlscript']
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*)'
+start = '(*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

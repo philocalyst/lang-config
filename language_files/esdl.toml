@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['esdl']
+injection-regex = 'esdl'
+name = 'esdl'
+roots = ['edgedb.toml']
+scope = 'source.esdl'
+
+[language.indent]
+tab-width = 2
+unit = '  '

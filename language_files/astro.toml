@@ -1,0 +1,14 @@
+[[language]]
+file-types = ['astro']
+injection-regex = 'astro'
+language-servers = ['astro-ls']
+name = 'astro'
+scope = 'source.astro'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

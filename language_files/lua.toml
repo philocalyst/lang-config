@@ -1,0 +1,17 @@
+[[language]]
+comment-token = '--'
+file-types = ['lua', 'rockspec']
+injection-regex = 'lua'
+language-servers = ['lua-language-server']
+name = 'lua'
+roots = ['.luarc.json', '.luacheckrc', '.stylua.toml', 'selene.toml', '.git']
+scope = 'source.lua'
+shebangs = ['lua', 'luajit']
+
+[language.block-comment-tokens]
+end = '--]]'
+start = '--[['
+
+[language.indent]
+tab-width = 2
+unit = '  '

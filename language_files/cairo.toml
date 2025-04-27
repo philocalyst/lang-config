@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '//'
+file-types = ['cairo']
+injection-regex = 'cairo'
+language-servers = ['cairo-language-server']
+name = 'cairo'
+scope = 'source.cairo'
+
+[language.indent]
+tab-width = 4
+unit = '    '

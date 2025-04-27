@@ -1,0 +1,22 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        $: $
+        (: )
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - typst
+        - typ
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: typ(st)?
+      language-servers:
+        - tinymist
+      name: typst
+      scope: source.typst

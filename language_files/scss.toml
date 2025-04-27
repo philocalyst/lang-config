@@ -1,0 +1,15 @@
+[[language]]
+auto-format = true
+file-types = ['scss']
+injection-regex = 'scss'
+language-servers = ['vscode-css-language-server']
+name = 'scss'
+scope = 'source.scss'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

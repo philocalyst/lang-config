@@ -1,0 +1,10 @@
+[[language]]
+file-types = []
+injection-regex = 'php-only'
+name = 'php-only'
+roots = ['composer.json', 'index.php']
+scope = 'source.php-only'
+
+[language.indent]
+tab-width = 4
+unit = '    '

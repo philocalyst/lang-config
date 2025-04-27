@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '%'
+file-types = ['tex', 'sty', 'cls', 'Rd', 'bbx', 'cbx']
+injection-regex = 'tex'
+language-servers = ['texlab']
+name = 'latex'
+scope = 'source.tex'
+
+[language.indent]
+tab-width = 4
+unit = '	'

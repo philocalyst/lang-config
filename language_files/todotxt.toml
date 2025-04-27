@@ -1,0 +1,8 @@
+[[language]]
+auto-format = true
+file-types = [{glob = '*.todo.txt'}, 'todotxt']
+name = 'todotxt'
+scope = 'text.todotxt'
+
+[language.formatter]
+command = 'sort'

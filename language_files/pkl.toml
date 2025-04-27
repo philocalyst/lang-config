@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '//'
+file-types = ['pkl', 'pcf']
+injection-regex = 'pkl'
+language-servers = ['pkl-lsp']
+name = 'pkl'
+scope = 'source.pkl'
+
+[language.indent]
+tab-width = 2
+unit = '  '

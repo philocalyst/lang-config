@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '//'
+file-types = ['wgsl']
+language-servers = ['wgsl-analyzer']
+name = 'wgsl'
+scope = 'source.wgsl'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

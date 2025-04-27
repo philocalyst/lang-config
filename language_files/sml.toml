@@ -1,0 +1,15 @@
+[[language]]
+file-types = ['sml']
+injection-regex = 'sml'
+name = 'sml'
+scope = 'source.sml'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*)'
+start = '(*'

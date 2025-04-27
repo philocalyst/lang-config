@@ -1,0 +1,6 @@
+[[language]]
+file-types = []
+grammar = 'markdown_inline'
+injection-regex = 'markdown\.inline'
+name = 'markdown.inline'
+scope = 'source.markdown.inline'

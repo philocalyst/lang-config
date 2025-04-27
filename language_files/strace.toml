@@ -1,0 +1,4 @@
+[[language]]
+file-types = ['strace']
+name = 'strace'
+scope = 'source.strace'

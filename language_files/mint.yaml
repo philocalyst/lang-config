@@ -1,0 +1,16 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - mint
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: mint
+      language-servers:
+        - mint
+      name: mint
+      scope: source.mint
+      shebangs: []

@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '//'
+file-types = ['move']
+injection-regex = 'move'
+language-servers = []
+name = 'move'
+roots = ['Move.toml']
+scope = 'source.move'
+
+[language.indent]
+tab-width = 4
+unit = '    '

@@ -1,0 +1,5 @@
+[[language]]
+file-types = ['regex', {glob = '.Rbuildignore'}]
+injection-regex = 'regex'
+name = 'regex'
+scope = 'source.regex'

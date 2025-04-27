@@ -1,0 +1,22 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*)'
+        start: (*
+      comment-token: //
+      file-types:
+        - fs
+        - fsx
+        - fsi
+        - fsscript
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: fsharp
+      language-servers:
+        - fsharp-ls
+      name: fsharp
+      roots:
+        - sln
+        - fsproj
+      scope: source.fs

@@ -1,0 +1,8 @@
+language:
+    - comment-token: ;
+      file-types:
+        - xtc
+        - xpc
+        - xoa
+      name: xtc
+      scope: source.xtc

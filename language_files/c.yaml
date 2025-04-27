@@ -1,0 +1,50 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      debugger:
+        command: lldb-dap
+        name: lldb-dap
+        templates:
+            - args:
+                console: internalConsole
+                program: '{0}'
+              completion:
+                - completion: filename
+                  name: binary
+              name: binary
+              request: launch
+            - args:
+                console: internalConsole
+                pid: '{0}'
+              completion:
+                - pid
+              name: attach
+              request: attach
+            - args:
+                attachCommands:
+                    - platform select remote-gdb-server
+                    - platform connect {0}
+                    - file {1}
+                    - attach {2}
+                console: internalConsole
+              completion:
+                - default: connect://localhost:3333
+                  name: lldb connect url
+                - completion: filename
+                  name: file
+                - pid
+              name: gdbserver attach
+              request: attach
+        transport: stdio
+      file-types:
+        - c
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: c
+      language-servers:
+        - clangd
+      name: c
+      scope: source.c

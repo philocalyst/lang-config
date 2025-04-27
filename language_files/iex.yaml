@@ -1,0 +1,7 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - iex
+      injection-regex: iex
+      name: iex
+      scope: source.iex

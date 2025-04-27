@@ -1,0 +1,16 @@
+[[language]]
+auto-format = true
+comment-token = '%'
+file-types = ['bib']
+injection-regex = 'bib'
+language-servers = ['texlab']
+name = 'bibtex'
+scope = 'source.bib'
+
+[language.formatter]
+args = ['-', '--curly', '--drop-all-caps', '--remove-empty-fields', '--sort-fields', '--sort=year,author,id', '--strip-enclosing-braces', '--trailing-commas']
+command = 'bibtex-tidy'
+
+[language.indent]
+tab-width = 4
+unit = '	'

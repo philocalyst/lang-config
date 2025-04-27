@@ -1,0 +1,17 @@
+language:
+    - block-comment-tokens:
+        - end: '#}'
+          start: '{#'
+        - end: -#}
+          start: '{#-'
+        - end: -#}
+          start: '{#'
+        - end: '#}'
+          start: '{#-'
+      file-types:
+        - tera
+      indent:
+        tab-width: 4
+        unit: '    '
+      name: tera
+      scope: source.tera

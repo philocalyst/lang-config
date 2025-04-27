@@ -1,0 +1,15 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: sites-available/*.conf
+        - glob: sites-enabled/*.conf
+        - glob: nginx.conf
+        - glob: conf.d/*.conf
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: nginx
+      name: nginx
+      roots:
+        - nginx.conf
+      scope: source.nginx

@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '#'
+file-types = ['gitconfig', {glob = '.gitmodules'}, {glob = '.gitconfig'}, {glob = '.git/config'}, {glob = '.config/git/config'}]
+injection-regex = 'git-config'
+name = 'git-config'
+scope = 'source.gitconfig'
+
+[language.indent]
+tab-width = 4
+unit = '	'

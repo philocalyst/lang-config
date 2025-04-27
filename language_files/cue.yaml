@@ -1,0 +1,20 @@
+language:
+    - auto-format: true
+      comment-token: //
+      file-types:
+        - cue
+      formatter:
+        args:
+            - fmt
+            - '-'
+        command: cue
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: cue
+      language-servers:
+        - cuelsp
+      name: cue
+      roots:
+        - cue.mod
+      scope: source.cue

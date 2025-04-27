@@ -1,0 +1,16 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+file-types = ['inko']
+injection-regex = 'inko'
+name = 'inko'
+roots = ['inko.pkg']
+scope = 'source.inko'
+
+[language.formatter]
+args = ['fmt', '-']
+command = 'inko'
+
+[language.indent]
+tab-width = 2
+unit = '  '

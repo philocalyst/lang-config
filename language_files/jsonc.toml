@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['jsonc', {glob = 'tsconfig.json'}, {glob = 'bun.lock'}]
+grammar = 'json'
+injection-regex = 'jsonc'
+language-servers = ['vscode-json-language-server']
+name = 'jsonc'
+scope = 'source.json'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

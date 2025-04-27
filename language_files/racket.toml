@@ -1,0 +1,16 @@
+[[language]]
+comment-token = ';'
+file-types = ['rkt', 'rktd', 'rktl', 'scrbl']
+grammar = 'scheme'
+language-servers = ['racket']
+name = 'racket'
+scope = 'source.racket'
+shebangs = ['racket']
+
+[language.block-comment-tokens]
+end = '|#'
+start = '#|'
+
+[language.indent]
+tab-width = 2
+unit = '  '

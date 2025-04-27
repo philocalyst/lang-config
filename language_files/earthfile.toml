@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '#'
+injection-regex = 'earthfile'
+language-servers = ['earthlyls']
+name = 'earthfile'
+roots = ['Earthfile']
+scope = 'source.earthfile'
+
+[[language.file-types]]
+glob = 'Earthfile'
+
+[language.indent]
+tab-width = 2
+unit = '  '

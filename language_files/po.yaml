@@ -1,0 +1,7 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - po
+        - pot
+      name: po
+      scope: source.po

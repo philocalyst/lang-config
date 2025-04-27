@@ -1,0 +1,26 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - Dockerfile
+        - glob: Dockerfile
+        - glob: Dockerfile.*
+        - dockerfile
+        - glob: dockerfile
+        - glob: dockerfile.*
+        - Containerfile
+        - glob: Containerfile
+        - glob: Containerfile.*
+        - containerfile
+        - glob: containerfile
+        - glob: containerfile.*
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: docker|dockerfile
+      language-servers:
+        - docker-langserver
+      name: dockerfile
+      roots:
+        - Dockerfile
+        - Containerfile
+      scope: source.dockerfile

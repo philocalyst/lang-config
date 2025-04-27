@@ -1,0 +1,22 @@
+[[language]]
+comment-token = '//'
+file-types = ['wit']
+injection-regex = 'wit'
+name = 'wit'
+scope = 'source.wit'
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'<' = '>'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

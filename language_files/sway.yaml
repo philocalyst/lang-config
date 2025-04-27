@@ -1,0 +1,15 @@
+language:
+    - comment-token: //
+      file-types:
+        - sw
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: sway
+      language-servers:
+        - forc
+      name: sway
+      roots:
+        - Forc.toml
+        - Forc.lock
+      scope: source.sway

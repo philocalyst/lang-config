@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['just', {glob = 'justfile'}, {glob = 'Justfile'}, {glob = '.justfile'}, {glob = '.Justfile'}]
+injection-regex = 'just'
+language-servers = ['just-lsp']
+name = 'just'
+scope = 'source.just'
+
+[language.indent]
+tab-width = 4
+unit = '    '

@@ -1,0 +1,21 @@
+language:
+    - comment-tokens:
+        - '#'
+        - '#'''
+      file-types:
+        - r
+        - R
+        - glob: .Rprofile
+        - glob: Rprofile.site
+        - glob: .RHistory
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (r|R)
+      language-servers:
+        - r
+      name: r
+      scope: source.r
+      shebangs:
+        - r
+        - R

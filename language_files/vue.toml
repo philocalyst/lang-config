@@ -1,0 +1,15 @@
+[[language]]
+file-types = ['vue']
+injection-regex = 'vue'
+language-servers = ['vuels']
+name = 'vue'
+roots = ['package.json']
+scope = 'source.vue'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

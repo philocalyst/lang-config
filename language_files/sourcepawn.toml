@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '//'
+file-types = ['sp', 'inc']
+language-servers = ['sourcepawn-studio']
+name = 'sourcepawn'
+scope = 'source.sourcepawn'
+
+[language.indent]
+tab-width = 4
+unit = '  '

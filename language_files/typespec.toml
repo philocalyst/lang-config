@@ -1,0 +1,18 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['tsp']
+injection-regex = '(tsp|typespec)'
+language-id = 'typespec'
+language-servers = ['typespec']
+name = 'typespec'
+roots = ['tspconfig.yaml']
+scope = 'source.typespec'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

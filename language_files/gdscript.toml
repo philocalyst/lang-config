@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-tokens = ['#', '##']
+file-types = ['gd']
+injection-regex = 'gdscript'
+name = 'gdscript'
+roots = ['project.godot']
+scope = 'source.gdscript'
+shebangs = []
+
+[language.formatter]
+args = ['-']
+command = 'gdformat'
+
+[language.indent]
+tab-width = 4
+unit = '	'

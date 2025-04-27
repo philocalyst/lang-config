@@ -1,0 +1,15 @@
+language:
+    - auto-format: true
+      comment-token: //
+      file-types:
+        - gleam
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: gleam
+      language-servers:
+        - gleam
+      name: gleam
+      roots:
+        - gleam.toml
+      scope: source.gleam

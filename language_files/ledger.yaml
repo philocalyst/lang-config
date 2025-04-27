@@ -1,0 +1,12 @@
+language:
+    - comment-token: ;
+      file-types:
+        - ldg
+        - ledger
+        - journal
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: ledger
+      name: ledger
+      scope: source.ledger

@@ -1,0 +1,18 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - d
+        - dd
+      formatter:
+        command: dfmt
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: d
+      language-servers:
+        - serve-d
+      name: d
+      scope: source.d

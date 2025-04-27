@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '//'
+file-types = ['dts', 'dtsi']
+injection-regex = '(dtsi?|devicetree|fdt)'
+name = 'devicetree'
+scope = 'source.devicetree'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '	'

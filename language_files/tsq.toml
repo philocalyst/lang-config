@@ -1,0 +1,37 @@
+[[language]]
+comment-token = ';'
+grammar = 'query'
+injection-regex = 'tsq'
+language-servers = ['ts_query_ls']
+name = 'tsq'
+scope = 'source.tsq'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+
+[[language.file-types]]
+glob = 'queries/*.scm'
+
+[[language.file-types]]
+glob = 'injections.scm'
+
+[[language.file-types]]
+glob = 'highlights.scm'
+
+[[language.file-types]]
+glob = 'indents.scm'
+
+[[language.file-types]]
+glob = 'textobjects.scm'
+
+[[language.file-types]]
+glob = 'locals.scm'
+
+[[language.file-types]]
+glob = 'tags.scm'
+
+[language.indent]
+tab-width = 2
+unit = '  '

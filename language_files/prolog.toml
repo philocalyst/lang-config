@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '%'
+file-types = ['pl', 'prolog']
+language-servers = ['swipl']
+name = 'prolog'
+scope = 'source.prolog'
+shebangs = ['swipl']
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'

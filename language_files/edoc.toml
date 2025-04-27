@@ -1,0 +1,9 @@
+[[language]]
+file-types = ['edoc', 'edoc.in']
+injection-regex = 'edoc'
+name = 'edoc'
+scope = 'source.edoc'
+
+[language.indent]
+tab-width = 4
+unit = '    '

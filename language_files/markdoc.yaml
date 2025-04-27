@@ -1,0 +1,10 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - mdoc
+      language-servers:
+        - markdoc-ls
+      name: markdoc
+      scope: text.markdoc

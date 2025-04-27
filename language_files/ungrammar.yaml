@@ -1,0 +1,11 @@
+language:
+    - comment-token: //
+      file-types:
+        - ungram
+        - ungrammar
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: ungrammar
+      name: ungrammar
+      scope: source.ungrammar

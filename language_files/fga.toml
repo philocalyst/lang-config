@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '#'
+file-types = ['fga']
+injection-regex = 'fga'
+name = 'fga'
+scope = 'source.fga'
+
+[language.indent]
+tab-width = 2
+unit = '  '

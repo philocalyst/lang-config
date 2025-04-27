@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['jq']
+injection-regex = 'jq'
+language-servers = ['jq-lsp']
+name = 'jq'
+scope = 'source.jq'
+
+[language.indent]
+tab-width = 2
+unit = '  '

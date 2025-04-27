@@ -1,0 +1,18 @@
+[[language]]
+comment-token = '//'
+file-types = ['jsx']
+grammar = 'javascript'
+injection-regex = 'jsx'
+language-id = 'javascriptreact'
+language-servers = ['typescript-language-server']
+name = 'jsx'
+roots = ['package.json']
+scope = 'source.jsx'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,7 @@
+[[language]]
+comment-token = '#'
+name = 'hosts'
+scope = 'source.hosts'
+
+[[language.file-types]]
+glob = 'hosts'

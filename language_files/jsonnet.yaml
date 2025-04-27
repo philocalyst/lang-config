@@ -1,0 +1,17 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - libsonnet
+        - jsonnet
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - jsonnet-language-server
+      name: jsonnet
+      roots:
+        - jsonnetfile.json
+      scope: source.jsonnet

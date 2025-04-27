@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '#'
+file-types = ['rb', 'rake', 'irb', 'gemspec', 'rabl', 'jbuilder', 'jb', 'podspec', 'rjs', 'rbi', 'rbs', {glob = 'rakefile'}, {glob = 'gemfile'}, {glob = 'Rakefile'}, {glob = 'Gemfile'}, {glob = 'Podfile'}, {glob = 'Vagrantfile'}, {glob = 'Brewfile'}, {glob = 'Guardfile'}, {glob = 'Capfile'}, {glob = 'Cheffile'}, {glob = 'Hobofile'}, {glob = 'Appraisals'}, {glob = 'Rantfile'}, {glob = 'Berksfile'}, {glob = 'Berksfile.lock'}, {glob = 'Thorfile'}, {glob = 'Puppetfile'}, {glob = 'Fastfile'}, {glob = 'Appfile'}, {glob = 'Deliverfile'}, {glob = 'Matchfile'}, {glob = 'Scanfile'}, {glob = 'Snapfile'}, {glob = 'Gymfile'}]
+injection-regex = 'ruby'
+language-servers = ['ruby-lsp', 'solargraph']
+name = 'ruby'
+scope = 'source.ruby'
+shebangs = ['ruby']
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '//'
+file-types = ['mint']
+injection-regex = 'mint'
+language-servers = ['mint']
+name = 'mint'
+scope = 'source.mint'
+shebangs = []
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

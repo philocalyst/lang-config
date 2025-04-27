@@ -1,0 +1,12 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - wesl
+      indent:
+        tab-width: 4
+        unit: '    '
+      name: wesl
+      scope: source.wesl

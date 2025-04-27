@@ -1,0 +1,16 @@
+[[language]]
+auto-format = true
+comment-tokens = ['//', '///']
+file-types = ['dart']
+language-servers = ['dart']
+name = 'dart'
+roots = ['pubspec.yaml']
+scope = 'source.dart'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

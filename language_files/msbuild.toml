@@ -1,0 +1,22 @@
+[[language]]
+file-types = ['proj', 'vbproj', 'csproj', 'fsproj', 'targets', 'props']
+grammar = 'xml'
+injection-regex = 'msbuild'
+name = 'msbuild'
+scope = 'source.msbuild'
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'<' = '>'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '-->'
+start = '<!--'
+
+[language.indent]
+tab-width = 2
+unit = '  '

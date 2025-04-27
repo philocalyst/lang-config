@@ -1,0 +1,10 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - capnp
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: capnp
+      name: capnp
+      scope: source.capnp

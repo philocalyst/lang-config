@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '--'
+file-types = ['idr']
+injection-regex = 'idr'
+language-servers = ['idris2-lsp']
+name = 'idris'
+scope = 'source.idr'
+shebangs = []
+
+[language.block-comment-tokens]
+end = '-}'
+start = '{-'
+
+[language.indent]
+tab-width = 2
+unit = '  '

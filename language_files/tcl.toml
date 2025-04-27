@@ -1,0 +1,7 @@
+[[language]]
+comment-token = '#'
+file-types = ['tcl']
+injection-regex = 'tcl'
+name = 'tcl'
+scope = 'source.tcl'
+shebangs = ['tclsh', 'tclish', 'jimsh', 'wish']

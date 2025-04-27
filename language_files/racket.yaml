@@ -1,0 +1,20 @@
+language:
+    - block-comment-tokens:
+        end: '|#'
+        start: '#|'
+      comment-token: ;
+      file-types:
+        - rkt
+        - rktd
+        - rktl
+        - scrbl
+      grammar: scheme
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - racket
+      name: racket
+      scope: source.racket
+      shebangs:
+        - racket

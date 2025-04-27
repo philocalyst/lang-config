@@ -1,0 +1,20 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        <: '>'
+        '{': '}'
+      block-comment-tokens:
+        - end: '*/'
+          start: /*
+        - end: '*/'
+          start: /**
+      comment-token: //
+      file-types:
+        - ohm
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: ohm
+      name: ohm
+      scope: source.ohm

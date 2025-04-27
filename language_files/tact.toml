@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '//'
+file-types = ['tact']
+injection-regex = 'tact'
+name = 'tact'
+scope = 'source.tact'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'<' = '>'
+'{' = '}'
+
+[language.indent]
+tab-width = 4
+unit = '    '

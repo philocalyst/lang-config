@@ -1,0 +1,25 @@
+language:
+    - block-comment-tokens:
+        end: --]]
+        start: --[[
+      comment-token: --
+      file-types:
+        - lua
+        - rockspec
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: lua
+      language-servers:
+        - lua-language-server
+      name: lua
+      roots:
+        - .luarc.json
+        - .luacheckrc
+        - .stylua.toml
+        - selene.toml
+        - .git
+      scope: source.lua
+      shebangs:
+        - lua
+        - luajit

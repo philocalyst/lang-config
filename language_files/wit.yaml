@@ -1,0 +1,20 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        '''': ''''
+        (: )
+        <: '>'
+        '[': ']'
+        '{': '}'
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - wit
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: wit
+      name: wit
+      scope: source.wit

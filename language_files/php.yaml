@@ -1,0 +1,27 @@
+language:
+    - block-comment-tokens:
+        - end: '*/'
+          start: /**
+        - end: '*/'
+          start: /*
+      comment-token: //
+      file-types:
+        - php
+        - inc
+        - php4
+        - php5
+        - phtml
+        - ctp
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: php
+      language-servers:
+        - intelephense
+      name: php
+      roots:
+        - composer.json
+        - index.php
+      scope: source.php
+      shebangs:
+        - php

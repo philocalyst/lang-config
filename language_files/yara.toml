@@ -1,0 +1,14 @@
+[[language]]
+comment-tokens = '//'
+file-types = ['yara', 'yar']
+language-servers = ['yls']
+name = 'yara'
+scope = 'source.yara'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

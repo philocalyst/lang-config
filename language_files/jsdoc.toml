@@ -1,0 +1,9 @@
+[[language]]
+file-types = ['jsdoc']
+injection-regex = 'jsdoc'
+name = 'jsdoc'
+scope = 'source.jsdoc'
+
+[language.indent]
+tab-width = 2
+unit = '  '

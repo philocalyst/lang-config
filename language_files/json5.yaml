@@ -1,0 +1,11 @@
+language:
+    - comment-token: //
+      file-types:
+        - json5
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: json5
+      language-servers: []
+      name: json5
+      scope: source.json5

@@ -1,0 +1,14 @@
+language:
+    - comment-token: //
+      file-types:
+        - prisma
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: prisma
+      language-servers:
+        - prisma-language-server
+      name: prisma
+      roots:
+        - package.json
+      scope: source.prisma

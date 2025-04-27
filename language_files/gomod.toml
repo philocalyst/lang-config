@@ -1,0 +1,14 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+injection-regex = 'gomod'
+language-servers = ['gopls']
+name = 'gomod'
+scope = 'source.gomod'
+
+[[language.file-types]]
+glob = 'go.mod'
+
+[language.indent]
+tab-width = 4
+unit = '	'

@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '#'
+file-types = ['toml', {glob = 'pdm.lock'}, {glob = 'poetry.lock'}, {glob = 'Cargo.lock'}, {glob = 'uv.lock'}]
+injection-regex = 'toml'
+language-servers = ['taplo']
+name = 'toml'
+scope = 'source.toml'
+
+[language.indent]
+tab-width = 2
+unit = '  '

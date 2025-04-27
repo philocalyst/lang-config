@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '#'
+file-types = ['cmake', {glob = 'CMakeLists.txt'}]
+injection-regex = 'cmake'
+language-servers = ['cmake-language-server']
+name = 'cmake'
+scope = 'source.cmake'
+
+[language.block-comment-tokens]
+end = ']]'
+start = '#[['
+
+[language.indent]
+tab-width = 2
+unit = '  '

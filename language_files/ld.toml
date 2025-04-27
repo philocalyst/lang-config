@@ -1,0 +1,13 @@
+[[language]]
+file-types = ['ld']
+injection-regex = 'ld'
+name = 'ld'
+scope = 'source.ld'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

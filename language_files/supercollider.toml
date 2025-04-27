@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '//'
+file-types = ['scd', 'sc', 'quark']
+injection-regex = 'supercollider'
+name = 'supercollider'
+scope = 'source.supercollider'
+
+[language.indent]
+tab-width = 4
+unit = '	'

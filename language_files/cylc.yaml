@@ -1,0 +1,11 @@
+language:
+    - comment-tokens: '#'
+      file-types:
+        - cylc
+        - glob: suite.rc
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: cylc
+      name: cylc
+      scope: source.cylc

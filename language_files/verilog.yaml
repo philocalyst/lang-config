@@ -1,0 +1,18 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - v
+        - vh
+        - sv
+        - svh
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: verilog
+      language-servers:
+        - svlangserver
+      name: verilog
+      scope: source.verilog

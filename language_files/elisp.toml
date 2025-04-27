@@ -1,0 +1,9 @@
+[[language]]
+comment-tokens = [';']
+file-types = ['el']
+name = 'elisp'
+scope = 'source.elisp'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'

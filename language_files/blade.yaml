@@ -1,0 +1,10 @@
+language:
+    - file-types:
+        - glob: '*.blade.php'
+        - blade
+      injection-regex: blade
+      name: blade
+      roots:
+        - composer.json
+        - index.php
+      scope: source.blade.php

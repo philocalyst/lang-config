@@ -1,0 +1,26 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        '''': ''''
+        (: )
+        <: '>'
+        '{': '}'
+      block-comment-tokens:
+        end: '}}'
+        start: '{{!'
+      file-types:
+        - glob: '{app,addon}/{components,templates}/*.hbs'
+      formatter:
+        args:
+            - --parser
+            - glimmer
+        command: prettier
+      grammar: glimmer
+      injection-regex: hbs
+      language-servers:
+        - ember-language-server
+      name: glimmer
+      roots:
+        - package.json
+        - ember-cli-build.js
+      scope: source.glimmer

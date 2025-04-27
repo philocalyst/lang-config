@@ -1,0 +1,15 @@
+[[language]]
+comment-tokens = ['#', '##']
+file-types = ['smk', {glob = 'Snakefile'}]
+language-servers = ['pylsp']
+name = 'snakemake'
+roots = ['Snakefile', 'config.yaml', 'environment.yaml', 'workflow/']
+scope = 'source.snakemake'
+
+[language.formatter]
+args = ['-']
+command = 'snakefmt'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,10 @@
+language:
+    - comment-token: ;
+      file-types:
+        - ll
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: llvm
+      name: llvm
+      scope: source.llvm

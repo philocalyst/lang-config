@@ -1,0 +1,30 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      comment-token: ;
+      file-types:
+        - lisp
+        - asd
+        - cl
+        - l
+        - lsp
+        - ny
+        - podsl
+        - sexp
+      grammar: scheme
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - cl-lsp
+      name: common-lisp
+      scope: source.lisp
+      shebangs:
+        - lisp
+        - sbcl
+        - ccl
+        - clisp
+        - ecl

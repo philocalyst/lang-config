@@ -1,0 +1,18 @@
+[[language]]
+comment-token = '//'
+file-types = ['ts', 'mts', 'cts']
+injection-regex = '(ts|typescript)'
+language-id = 'typescript'
+language-servers = ['typescript-language-server']
+name = 'typescript'
+roots = ['package.json', 'tsconfig.json']
+scope = 'source.ts'
+shebangs = ['deno', 'bun', 'ts-node']
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

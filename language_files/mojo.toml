@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '#'
+file-types = ['mojo', '🔥']
+injection-regex = 'mojo'
+language-servers = ['mojo-lsp']
+name = 'mojo'
+roots = ['__init__.mojo']
+scope = 'source.mojo'
+
+[language.formatter]
+args = ['run', 'mojo', 'format', '-q', '-']
+command = 'magic'
+
+[language.indent]
+tab-width = 4
+unit = '    '

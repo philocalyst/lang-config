@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '#'
+file-types = ['elv']
+grammar = 'elvish'
+language-servers = ['elvish']
+name = 'elvish'
+scope = 'source.elvish'
+shebangs = ['elvish']
+
+[language.indent]
+tab-width = 2
+unit = '  '

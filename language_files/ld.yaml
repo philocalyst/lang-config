@@ -1,0 +1,12 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      file-types:
+        - ld
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: ld
+      name: ld
+      scope: source.ld

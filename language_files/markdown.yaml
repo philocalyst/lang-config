@@ -1,0 +1,29 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - md
+        - livemd
+        - markdown
+        - mdx
+        - mkd
+        - mkdn
+        - mdwn
+        - mdown
+        - markdn
+        - mdtxt
+        - mdtext
+        - workbook
+        - glob: PULLREQ_EDITMSG
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: md|markdown
+      language-servers:
+        - marksman
+        - markdown-oxide
+      name: markdown
+      roots:
+        - .marksman.toml
+      scope: source.md

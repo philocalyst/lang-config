@@ -1,0 +1,17 @@
+language:
+    - block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - rmd
+        - Rmd
+      grammar: markdown
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: (r|R)md
+      language-id: rmd
+      language-servers:
+        - r
+      name: rmarkdown
+      scope: source.rmd

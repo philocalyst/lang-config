@@ -1,0 +1,45 @@
+[[language]]
+comment-token = '//'
+file-types = ['cs', 'csx', 'cake']
+injection-regex = 'c-?sharp'
+language-servers = ['omnisharp']
+name = 'c-sharp'
+roots = ['sln', 'csproj']
+scope = 'source.csharp'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.debugger]
+args = ['--interpreter=vscode']
+command = 'netcoredbg'
+name = 'netcoredbg'
+port-arg = '--server={}'
+transport = 'tcp'
+
+[[language.debugger.templates]]
+name = 'launch'
+request = 'launch'
+
+[language.debugger.templates.args]
+console = 'internalConsole'
+internalConsoleOptions = 'openOnSessionStart'
+program = '{0}'
+type = 'coreclr'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'path to dll'
+
+[[language.debugger.templates]]
+completion = ['pid']
+name = 'attach'
+request = 'attach'
+
+[language.debugger.templates.args]
+processId = '{0}'
+
+[language.indent]
+tab-width = 4
+unit = '	'

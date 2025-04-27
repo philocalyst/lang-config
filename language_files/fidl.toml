@@ -1,0 +1,16 @@
+[[language]]
+comment-token = '//'
+file-types = ['fidl']
+injection-regex = 'fidl'
+name = 'fidl'
+scope = 'source.fidl'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'<' = '>'
+'{' = '}'
+
+[language.indent]
+tab-width = 4
+unit = '    '

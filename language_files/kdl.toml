@@ -1,0 +1,14 @@
+[[language]]
+comment-token = '//'
+file-types = ['kdl']
+injection-regex = 'kdl'
+name = 'kdl'
+scope = 'source.kdl'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.formatter]
+args = ['format', '-']
+command = 'kdlfmt'

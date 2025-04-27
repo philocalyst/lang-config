@@ -1,0 +1,13 @@
+[[language]]
+comment-token = '#'
+file-types = ['hurl']
+injection-regex = 'hurl'
+name = 'hurl'
+scope = 'source.hurl'
+
+[language.formatter]
+command = 'hurlfmt'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['blp']
+injection-regex = 'blueprint'
+language-servers = ['blueprint-compiler']
+name = 'blueprint'
+scope = 'source.blueprint'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

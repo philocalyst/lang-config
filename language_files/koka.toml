@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '//'
+file-types = ['kk']
+injection-regex = 'koka'
+language-servers = ['koka']
+name = 'koka'
+scope = 'source.koka'
+
+[language.indent]
+tab-width = 8
+unit = '  '

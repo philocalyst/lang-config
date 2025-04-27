@@ -1,0 +1,23 @@
+[[language]]
+comment-token = '//'
+file-types = ['gjs']
+grammar = 'javascript'
+language-servers = [{except-features = ['format', 'diagnostics'], name = 'typescript-language-server'}, 'vscode-eslint-language-server', 'ember-language-server']
+name = 'gjs'
+roots = ['package.json', 'ember-cli-build.js']
+scope = 'source.gjs'
+
+[language.auto-pairs]
+'"' = '"'
+"'" = "'"
+'(' = ')'
+'<' = '>'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

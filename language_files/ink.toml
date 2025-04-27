@@ -1,0 +1,17 @@
+[[language]]
+comment-token = '//'
+file-types = ['ink']
+injection-regex = 'ink'
+name = 'ink'
+scope = 'source.ink'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '	'
+
+[language.soft-wrap]
+enable = true

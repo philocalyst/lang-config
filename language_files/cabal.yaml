@@ -1,0 +1,14 @@
+language:
+    - comment-token: --
+      file-types:
+        - cabal
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - haskell-language-server
+      name: cabal
+      roots:
+        - cabal.project
+        - Setup.hs
+      scope: source.cabal

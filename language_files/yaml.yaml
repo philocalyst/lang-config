@@ -1,0 +1,19 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - yml
+        - yaml
+        - glob: .prettierrc
+        - glob: .clangd
+        - glob: .clang-format
+        - glob: .clang-tidy
+        - sublime-syntax
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: yml|yaml
+      language-servers:
+        - yaml-language-server
+        - ansible-language-server
+      name: yaml
+      scope: source.yaml

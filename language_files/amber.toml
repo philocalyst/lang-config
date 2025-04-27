@@ -1,0 +1,9 @@
+[[language]]
+comment-token = ['//', '///']
+file-types = ['ab']
+name = 'amber'
+scope = 'source.ab'
+
+[language.indent]
+tab-width = 4
+unit = '    '

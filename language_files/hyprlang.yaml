@@ -1,0 +1,11 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - glob: hypr/*.conf
+      grammar: hyprlang
+      language-servers:
+        - hyprls
+      name: hyprlang
+      roots:
+        - hyprland.conf
+      scope: source.hyprlang

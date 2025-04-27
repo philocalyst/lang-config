@@ -1,0 +1,15 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - awk
+        - gawk
+        - nawk
+        - mawk
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: awk
+      language-servers:
+        - awk-language-server
+      name: awk
+      scope: source.awk

@@ -1,0 +1,10 @@
+language:
+    - comment-token: //
+      file-types:
+        - ha
+      indent:
+        tab-width: 8
+        unit: "\t"
+      injection-regex: hare
+      name: hare
+      scope: source.hare

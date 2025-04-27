@@ -1,0 +1,78 @@
+language:
+    - auto-format: true
+      auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '`': '`'
+        '{': '}'
+      block-comment-tokens:
+        - end: '*/'
+          start: /*
+        - end: '*/'
+          start: /**
+        - end: '*/'
+          start: /*!
+      comment-tokens:
+        - //
+        - ///
+        - //!
+      debugger:
+        command: lldb-dap
+        name: lldb-dap
+        templates:
+            - args:
+                program: '{0}'
+              completion:
+                - completion: filename
+                  name: binary
+              name: binary
+              request: launch
+            - args:
+                program: '{0}'
+                runInTerminal: true
+              completion:
+                - completion: filename
+                  name: binary
+              name: binary (terminal)
+              request: launch
+            - args:
+                pid: '{0}'
+              completion:
+                - pid
+              name: attach
+              request: attach
+            - args:
+                attachCommands:
+                    - platform select remote-gdb-server
+                    - platform connect {0}
+                    - file {1}
+                    - attach {2}
+              completion:
+                - default: connect://localhost:3333
+                  name: lldb connect url
+                - completion: filename
+                  name: file
+                - pid
+              name: gdbserver attach
+              request: attach
+        transport: stdio
+      file-types:
+        - rs
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: rs|rust
+      language-servers:
+        - rust-analyzer
+      name: rust
+      persistent-diagnostic-sources:
+        - rustc
+        - clippy
+      roots:
+        - Cargo.toml
+        - Cargo.lock
+      scope: source.rust
+      shebangs:
+        - rust-script
+        - cargo

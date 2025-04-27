@@ -1,0 +1,11 @@
+[[language]]
+comment-token = ';'
+file-types = ['beancount', 'bean']
+injection-regex = 'beancount'
+language-servers = ['beancount-language-server']
+name = 'beancount'
+scope = 'source.beancount'
+
+[language.indent]
+tab-width = 2
+unit = '  '

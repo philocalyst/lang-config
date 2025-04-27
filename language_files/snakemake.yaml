@@ -1,0 +1,23 @@
+language:
+    - comment-tokens:
+        - '#'
+        - '##'
+      file-types:
+        - smk
+        - glob: Snakefile
+      formatter:
+        args:
+            - '-'
+        command: snakefmt
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - pylsp
+      name: snakemake
+      roots:
+        - Snakefile
+        - config.yaml
+        - environment.yaml
+        - workflow/
+      scope: source.snakemake

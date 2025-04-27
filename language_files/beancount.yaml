@@ -1,0 +1,13 @@
+language:
+    - comment-token: ;
+      file-types:
+        - beancount
+        - bean
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: beancount
+      language-servers:
+        - beancount-language-server
+      name: beancount
+      scope: source.beancount

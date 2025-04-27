@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '%%'
+file-types = ['mermaid', 'mmd']
+injection-regex = 'mermaid'
+name = 'mermaid'
+scope = 'source.mermaid'
+
+[language.indent]
+tab-width = 4
+unit = '    '

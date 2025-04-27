@@ -1,0 +1,9 @@
+[[language]]
+file-types = ['xit']
+injection-regex = 'xit'
+name = 'xit'
+scope = 'source.xit'
+
+[language.indent]
+tab-width = 4
+unit = '    '

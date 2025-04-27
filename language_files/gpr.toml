@@ -1,0 +1,12 @@
+[[language]]
+comment-token = '--'
+file-types = ['gpr']
+injection-regex = 'gpr'
+language-servers = ['ada-gpr-language-server']
+name = 'gpr'
+roots = ['alire.toml']
+scope = 'source.gpr'
+
+[language.indent]
+tab-width = 3
+unit = '   '

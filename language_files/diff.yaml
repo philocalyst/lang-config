@@ -1,0 +1,12 @@
+language:
+    - comment-token: '#'
+      file-types:
+        - diff
+        - patch
+        - rej
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: diff
+      name: diff
+      scope: source.diff

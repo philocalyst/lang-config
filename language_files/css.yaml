@@ -1,0 +1,16 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      file-types:
+        - css
+        - scss
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: css
+      language-servers:
+        - vscode-css-language-server
+      name: css
+      scope: source.css

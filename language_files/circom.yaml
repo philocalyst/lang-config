@@ -1,0 +1,15 @@
+language:
+    - auto-format: false
+      comment-tokens: //
+      file-types:
+        - circom
+      indent:
+        tab-width: 4
+        unit: '    '
+      injection-regex: circom
+      language-servers:
+        - circom-lsp
+      name: circom
+      roots:
+        - package.json
+      scope: source.circom

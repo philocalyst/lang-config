@@ -1,0 +1,10 @@
+[[language]]
+comment-token = ';'
+file-types = ['cmm', 't32']
+injection-regex = 't32'
+name = 't32'
+scope = 'source.t32'
+
+[language.indent]
+tab-width = 2
+unit = '  '

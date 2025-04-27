@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['libsonnet', 'jsonnet']
+language-servers = ['jsonnet-language-server']
+name = 'jsonnet'
+roots = ['jsonnetfile.json']
+scope = 'source.jsonnet'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = '  '

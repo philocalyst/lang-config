@@ -1,0 +1,19 @@
+language:
+    - block-comment-tokens:
+        end: '}'
+        start: '{'
+      comment-token: //
+      file-types:
+        - pas
+        - pp
+        - inc
+        - lpr
+        - lfm
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: pascal
+      language-servers:
+        - pasls
+      name: pascal
+      scope: source.pascal

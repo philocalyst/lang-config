@@ -1,0 +1,6 @@
+language:
+    - file-types:
+        - pod
+      injection-regex: pod
+      name: pod
+      scope: source.pod

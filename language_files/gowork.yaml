@@ -1,0 +1,13 @@
+language:
+    - auto-format: true
+      comment-token: //
+      file-types:
+        - glob: go.work
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: gowork
+      language-servers:
+        - gopls
+      name: gowork
+      scope: source.gowork

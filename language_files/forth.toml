@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '\'
+file-types = ['fs', 'forth', 'fth', '4th']
+injection-regex = 'forth'
+language-servers = ['forth-lsp']
+name = 'forth'
+scope = 'source.forth'
+
+[language.indent]
+tab-width = 3
+unit = '   '

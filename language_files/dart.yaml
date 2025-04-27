@@ -1,0 +1,19 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-tokens:
+        - //
+        - ///
+      file-types:
+        - dart
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - dart
+      name: dart
+      roots:
+        - pubspec.yaml
+      scope: source.dart

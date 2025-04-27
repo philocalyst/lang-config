@@ -1,0 +1,19 @@
+[[language]]
+auto-format = false
+comment-token = '--'
+file-types = ['u']
+injection-regex = 'unison'
+name = 'unison'
+scope = 'source.unison'
+shebangs = []
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'`' = '`'
+'{' = '}'
+
+[language.indent]
+tab-width = 4
+unit = '    '

@@ -1,0 +1,15 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      file-types:
+        - kdl
+      formatter:
+        args:
+            - format
+            - '-'
+        command: kdlfmt
+      injection-regex: kdl
+      name: kdl
+      scope: source.kdl

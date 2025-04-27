@@ -1,0 +1,13 @@
+[[language]]
+comment-token = 'JJ:'
+name = 'jjdescription'
+rulers = [51, 73]
+scope = 'jj.description'
+text-width = 72
+
+[[language.file-types]]
+glob = '*.jjdescription'
+
+[language.indent]
+tab-width = 2
+unit = '  '

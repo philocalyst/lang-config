@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '#'
+file-types = ['gn', 'gni']
+injection-regex = 'gn'
+name = 'gn'
+roots = []
+scope = 'source.gn'
+
+[language.formatter]
+args = ['format', '--stdin']
+command = 'gn'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,44 @@
+language:
+    - block-comment-tokens:
+        end: '*/'
+        start: /*
+      comment-token: //
+      debugger:
+        args:
+            - --interpreter=vscode
+        command: netcoredbg
+        name: netcoredbg
+        port-arg: --server={}
+        templates:
+            - args:
+                console: internalConsole
+                internalConsoleOptions: openOnSessionStart
+                program: '{0}'
+                type: coreclr
+              completion:
+                - completion: filename
+                  name: path to dll
+              name: launch
+              request: launch
+            - args:
+                processId: '{0}'
+              completion:
+                - pid
+              name: attach
+              request: attach
+        transport: tcp
+      file-types:
+        - cs
+        - csx
+        - cake
+      indent:
+        tab-width: 4
+        unit: "\t"
+      injection-regex: c-?sharp
+      language-servers:
+        - omnisharp
+      name: c-sharp
+      roots:
+        - sln
+        - csproj
+      scope: source.csharp

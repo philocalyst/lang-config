@@ -1,0 +1,20 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+      comment-token: ;
+      file-types:
+        - ss
+        - scm
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: scheme
+      name: scheme
+      scope: source.scheme
+      shebangs:
+        - scheme
+        - guile
+        - chicken

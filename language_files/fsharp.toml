@@ -1,0 +1,17 @@
+[[language]]
+auto-format = true
+comment-token = '//'
+file-types = ['fs', 'fsx', 'fsi', 'fsscript']
+injection-regex = 'fsharp'
+language-servers = ['fsharp-ls']
+name = 'fsharp'
+roots = ['sln', 'fsproj']
+scope = 'source.fs'
+
+[language.block-comment-tokens]
+end = '*)'
+start = '(*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

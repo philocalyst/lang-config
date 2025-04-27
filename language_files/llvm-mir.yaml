@@ -1,0 +1,9 @@
+language:
+    - comment-token: ;
+      file-types: []
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: mir
+      name: llvm-mir
+      scope: source.llvm_mir

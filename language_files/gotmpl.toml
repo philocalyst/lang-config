@@ -1,0 +1,15 @@
+[[language]]
+comment-token = '//'
+file-types = ['gotmpl']
+injection-regex = 'gotmpl'
+language-servers = ['gopls']
+name = 'gotmpl'
+scope = 'source.gotmpl'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 2
+unit = ' '

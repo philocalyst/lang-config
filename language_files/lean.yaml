@@ -1,0 +1,26 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+        '[': ']'
+        '{': '}'
+        ⟨: ⟩
+      block-comment-tokens:
+        end: -/
+        start: /-
+      comment-token: --
+      file-types:
+        - lean
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: lean
+      language-servers:
+        - lean
+      name: lean
+      roots:
+        - lakefile.lean
+      rulers:
+        - 101
+      scope: source.lean
+      text-width: 100

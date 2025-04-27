@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '#'
+grammar = 'hyprlang'
+language-servers = ['hyprls']
+name = 'hyprlang'
+roots = ['hyprland.conf']
+scope = 'source.hyprlang'
+
+[[language.file-types]]
+glob = 'hypr/*.conf'

@@ -1,0 +1,27 @@
+language:
+    - auto-format: true
+      block-comment-tokens:
+        end: -->
+        start: <!--
+      file-types:
+        - html
+        - htm
+        - shtml
+        - xhtml
+        - xht
+        - jsp
+        - asp
+        - aspx
+        - jshtm
+        - volt
+        - rhtml
+        - cshtml
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: html
+      language-servers:
+        - vscode-html-language-server
+        - superhtml
+      name: html
+      scope: text.html.basic

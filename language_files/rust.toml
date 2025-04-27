@@ -1,0 +1,78 @@
+[[language]]
+auto-format = true
+comment-tokens = ['//', '///', '//!']
+file-types = ['rs']
+injection-regex = 'rs|rust'
+language-servers = ['rust-analyzer']
+name = 'rust'
+persistent-diagnostic-sources = ['rustc', 'clippy']
+roots = ['Cargo.toml', 'Cargo.lock']
+scope = 'source.rust'
+shebangs = ['rust-script', 'cargo']
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'`' = '`'
+'{' = '}'
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/*'
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/**'
+
+[[language.block-comment-tokens]]
+end = '*/'
+start = '/*!'
+
+[language.debugger]
+command = 'lldb-dap'
+name = 'lldb-dap'
+transport = 'stdio'
+
+[[language.debugger.templates]]
+name = 'binary'
+request = 'launch'
+
+[language.debugger.templates.args]
+program = '{0}'
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'binary'
+
+[[language.debugger.templates]]
+name = 'binary (terminal)'
+request = 'launch'
+
+[language.debugger.templates.args]
+program = '{0}'
+runInTerminal = true
+
+[[language.debugger.templates.completion]]
+completion = 'filename'
+name = 'binary'
+
+[[language.debugger.templates]]
+completion = ['pid']
+name = 'attach'
+request = 'attach'
+
+[language.debugger.templates.args]
+pid = '{0}'
+
+[[language.debugger.templates]]
+completion = [{default = 'connect://localhost:3333', name = 'lldb connect url'}, {completion = 'filename', name = 'file'}, 'pid']
+name = 'gdbserver attach'
+request = 'attach'
+
+[language.debugger.templates.args]
+attachCommands = ['platform select remote-gdb-server', 'platform connect {0}', 'file {1}', 'attach {2}']
+
+[language.indent]
+tab-width = 4
+unit = '    '

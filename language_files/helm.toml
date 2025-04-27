@@ -1,0 +1,19 @@
+[[language]]
+comment-token = '#'
+grammar = 'gotmpl'
+language-servers = ['helm_ls']
+name = 'helm'
+roots = ['Chart.yaml']
+scope = 'source.helm'
+
+[[language.file-types]]
+glob = 'templates/*.yaml'
+
+[[language.file-types]]
+glob = 'templates/*.yml'
+
+[[language.file-types]]
+glob = 'templates/_*.tpl'
+
+[[language.file-types]]
+glob = 'templates/NOTES.txt'

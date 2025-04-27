@@ -1,0 +1,10 @@
+[[language]]
+comment-token = ';'
+file-types = []
+injection-regex = 'mir'
+name = 'llvm-mir'
+scope = 'source.llvm_mir'
+
+[language.indent]
+tab-width = 2
+unit = '  '

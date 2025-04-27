@@ -1,0 +1,46 @@
+language:
+    - auto-format: true
+      file-types:
+        - json
+        - arb
+        - ipynb
+        - geojson
+        - gltf
+        - webmanifest
+        - glob: flake.lock
+        - glob: .babelrc
+        - glob: .bowerrc
+        - glob: .jscrc
+        - js.map
+        - ts.map
+        - css.map
+        - glob: .jslintrc
+        - jsonl
+        - jsonld
+        - glob: .vuerc
+        - glob: composer.lock
+        - glob: .watchmanconfig
+        - avsc
+        - ldtk
+        - ldtkl
+        - glob: .swift-format
+        - sublime-build
+        - sublime-color-scheme
+        - sublime-commands
+        - sublime-completions
+        - sublime-keymap
+        - sublime-macro
+        - sublime-menu
+        - sublime-mousemap
+        - sublime-project
+        - sublime-settings
+        - sublime-theme
+        - sublime-workspace
+      indent:
+        tab-width: 2
+        unit: '  '
+      injection-regex: json
+      language-servers:
+        - vscode-json-language-server
+      name: json
+      scope: source.json

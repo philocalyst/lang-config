@@ -1,0 +1,11 @@
+[[language]]
+comment-token = '--'
+file-types = ['vhd', 'vhdl']
+injection-regex = 'vhdl'
+language-servers = ['vhdl_ls']
+name = 'vhdl'
+scope = 'source.vhdl'
+
+[language.indent]
+tab-width = 2
+unit = '  '

@@ -1,0 +1,10 @@
+language:
+    - auto-pairs:
+        '"': '"'
+        (: )
+      comment-tokens:
+        - ;
+      file-types:
+        - el
+      name: elisp
+      scope: source.elisp

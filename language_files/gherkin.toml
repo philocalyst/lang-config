@@ -1,0 +1,9 @@
+[[language]]
+comment-token = '#'
+file-types = ['feature']
+name = 'gherkin'
+scope = 'source.feature'
+
+[language.indent]
+tab-width = 2
+unit = '  '

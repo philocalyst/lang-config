@@ -1,0 +1,14 @@
+language:
+    - comment-token: //
+      file-types:
+        - templ
+      indent:
+        tab-width: 2
+        unit: '  '
+      language-servers:
+        - templ
+      name: templ
+      roots:
+        - go.work
+        - go.mod
+      scope: source.templ

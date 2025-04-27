@@ -1,0 +1,21 @@
+[[language]]
+comment-tokens = ['//', '///', '//!']
+file-types = ['pest']
+injection-regex = 'pest'
+language-servers = ['pest-language-server']
+name = 'pest'
+scope = 'source.pest'
+
+[language.auto-pairs]
+'"' = '"'
+'(' = ')'
+'[' = ']'
+'{' = '}'
+
+[language.block-comment-tokens]
+end = '*/'
+start = '/*'
+
+[language.indent]
+tab-width = 4
+unit = '    '

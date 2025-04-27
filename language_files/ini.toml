@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '#'
+file-types = ['ini', 'service', 'automount', 'desktop', 'device', 'mount', 'nspawn', 'path', 'scope', 'slice', 'socket', 'swap', 'target', 'timer', {glob = 'systemd/**/*.conf'}, 'container', 'volume', 'kube', 'network', {glob = '.editorconfig'}, {glob = '.npmrc'}, {glob = 'hgrc'}, {glob = 'npmrc'}, {glob = 'rclone.conf'}, 'properties', 'cfg', 'directory']
+injection-regex = 'ini'
+name = 'ini'
+scope = 'source.ini'
+
+[language.indent]
+tab-width = 4
+unit = '	'

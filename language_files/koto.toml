@@ -1,0 +1,12 @@
+[[language]]
+block-comment-tokens = ['#-', '-#']
+comment-token = '#'
+file-types = ['koto']
+injection-regex = 'koto'
+language-servers = ['koto-ls']
+name = 'koto'
+scope = 'source.koto'
+
+[language.indent]
+tab-width = 2
+unit = '  '

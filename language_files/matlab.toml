@@ -1,0 +1,10 @@
+[[language]]
+comment-token = '%'
+file-types = ['m']
+name = 'matlab'
+scope = 'source.m'
+shebangs = ['octave-cli', 'matlab']
+
+[language.indent]
+tab-width = 2
+unit = '  '
