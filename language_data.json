@@ -1,4 +1,35 @@
 {
+  "arduino": {
+    "file_types": [
+      "ino",
+      "pde"
+    ],
+    "block_comment_tokens": {
+      "end": "//%s",
+      "start": "/*%s*/"
+    },
+    "language-servers": [
+      "arduino-language-server"
+    ],
+    "injection-regex": "ard",
+    "roots": [
+      "platformio.ini"
+    ],
+    "scope": "source.cpp"
+  },
+  "autohotkey": {
+    "file_types": [
+      "ahk"
+    ],
+    "comment_token": ";",
+    "block_comment_tokens": {
+      "start": "/*",
+      "end": "*/"
+    },
+    "injection-regex": "ahk",
+    "roots": [],
+    "scope": "source.autohotkey"
+  },
   "ada": {
     "comment_token": "--",
     "file_types": [
@@ -1728,6 +1759,22 @@
       "ember-cli-build.js"
     ],
     "scope": "source.gjs"
+  },
+  "jai": {
+    "file_types": [
+      "jai"
+    ],
+    "comment_token": "//",
+    "block_comment_tokens": {
+      "start": "/*",
+      "end": "*/"
+    },
+    "language-servers": [
+      "jails"
+    ],
+    "injection-regex": "jai",
+    "roots": [],
+    "scope": "source.jai"
   },
   "gleam": {
     "auto-format": true,
