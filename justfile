@@ -10,6 +10,17 @@ PARSE_CLI := "parse/all"
 help:
     @just --list
 
+# ▰▰▰ Run ▰▰▰ #
+run-parse-helix:
+    @echo "Building parse_helix…"
+    go run -C {{HELIX_PARSE_CLI}} "parse_helix"
+
+run-parse-all:
+    @echo "running parse…"
+    go run -C {{PARSE_CLI}} "parse_all"
+
+run-all: run-parse-helix run-parse-all
+
 # ▰▰▰ Build ▰▰▰ #
 build-parse-helix:
     @echo "Building parse_helix…"
