@@ -2,7 +2,7 @@
 
 Centralized language definitions for editors, linters, and syntax-aware tools.
 
-Manage filetypes, comment strings, extensions, and more in JSON, TOML, and YAML—all from a single source of truth. Kept up-to-date with the community and changing, shifting, times. It's a wild world out there. C++ might get a borrow checker. Don't venture into the veritable chaos alone. Let us lend you a hand.
+Manage filetypes, comment strings, extensions, and more in JSON, TOML, and YAML—all from a single source of truth. Kept up-to-date with the community and changing, shifting times. It’s a wild world out there. C++ might get a borrow checker. Don’t venture into the veritable chaos alone—let us lend you a hand.
 
 ---
 
@@ -14,115 +14,163 @@ Maintaining language metadata across different tools and editors can be a burden
 - Fragmented sources (editor-specific, plugin-specific)  
 - Inconsistent comment strings, extensions, or embedded-filetype support  
 
-LangConfig solves this by providing:
+**LangConfig** solves this by providing:
 
 - A unified schema for language definitions  
 - Easy conversion between TOML, JSON, and YAML  
 - CLI utilities to import, generate, and split language data  
-- An upcoming REST API for integration into dynamic applications.
+- An upcoming REST API for dynamic integrations  
 
-Whether you’re authoring an editor, a plugin for an editor, or having fun with comment generation, lang-config allows you to operate with confidence on the languages you work with.
+Whether you’re authoring an editor, a plugin, or having fun with comment generation, LangConfig lets you operate with confidence.
+
+---
 
 ## Features
 
-- Built off of Helix's `Languages.toml` -- all definitions in this early phase are editor-tested
-- Well-structured data, lying in individual files or a single JSON manifest, so you can choose what you want to keep.
-- Each language can hold a variety of options (comment tokens, block comment tokens, regex injections, active LSP's, diagonistic sources, roots, scopes, shebangs, supported auto-pairs)
-- Easy to extend: add new languages, override defaults, or support new formats
-- Support for a variety of configurations, and more to come. 
+- Based on Helix’s `Languages.toml`—all definitions in this early phase are editor-tested  
+- Individual files or single JSON manifest—pick your workflow  
+- Rich per-language options (comment tokens, block tokens, injections, LSPs, diagnostics, roots, scopes, shebangs, auto-pairs…)  
+- Easy to extend: add or override formats, fields, defaults  
+- Accurate Tree-sitter-powered support for embedded/compound filetypes  
+
+---
+
+## Prerequisites
+
+- Go 1.24+  
+- [just](https://github.com/casey/just) (a modern task runner)
+
+---
 
 ## Quickstart
 
-### 1. Clone the repo
+1. Clone the repo
 
-```shell
-```
+   ```bash
+   git clone https://github.com/you/langconfig.git
+   cd langconfig
+   ```
 
-The project holds two CLI's
-- `parse_helix` (imports Helix definitions)  
-- `parse`       (generates per-language files)
+2. Explore available tasks
 
-### 2. Generate a Unified JSON
+   ```bash
+   just --list
+   ```
 
-Convert Helix’s `languages.toml` into `language_data.json`:
+3. Generate a unified JSON from Helix’s TOML:
 
-```bash
-parse_helix \
-  -i path/to/languages.toml \
-  -o language_data.json
-```
+   ```bash
+   just gen-json HELIX_TOML=path/to/languages.toml OUT=language_data.json
+   ```
 
-### 3. Emit Per-Language Files
+4. Split that JSON into per-language TOML/YAML:
 
-Split the JSON manifest into individual TOML and/or YAML files:
+   ```bash
+   just split-files IN=language_data.json OUT_DIR=language_files FORMAT=both
+   ```
 
-```bash
-parse \
-  -i language_data.json \
-  -o language_files \
-  -f both        # options: toml, yaml, both
-```
+   You’ll end up with:
 
-You’ll end up with:
-```
-language_files/
-├── python.toml
-├── python.yaml
-├── javascript.toml
-├── javascript.yaml
-└── ...
-```
+   ```
+   language_files/
+   ├── python.toml
+   ├── python.yaml
+   ├── javascript.toml
+   ├── javascript.yaml
+   └── …
+   ```
+
+---
+
+## Justfile Commands
+
+Use `just <recipe> [ARGS…]` to streamline your workflow:
+
+• help  
+    List all available tasks.
+
+• gen-json HELIX_TOML OUT  
+    Convert Helix’s `languages.toml` to a single JSON manifest.
+
+• split-files IN OUT_DIR FORMAT  
+    Split a JSON manifest into `{lang}.toml` and/or `{lang}.yaml`.
+
+• run-all  
+    Runs both parse steps (for ad-hoc testing).
+
+• build-all  
+    Build both `parse_helix` and `parse_all` binaries into the project root.
+
+• install-all  
+    `go install` the CLIs into your `GOPATH`.
+
+• test-all  
+    Run all unit tests.
+
+• fmt  
+    `go fmt` + `go mod tidy`.
+
+• lint  
+    Static analysis via `staticcheck`.
+
+• clean  
+    Remove binaries, JSON outputs, and generated language files.
+
+---
 
 ## Components
 
 1. **parse_helix** (Go CLI)  
-   - Reads Helix’s `languages.toml`  
-   - Outputs a unified `language_data.json`
+   Reads Helix’s `languages.toml` → outputs `language_data.json`
 
 2. **parse** (Go CLI)  
-   - Consumes `language_data.json` or a TOML manifest  
-   - Emits per-language `{lang}.toml` and/or `{lang}.yaml`
+   Reads `language_data.json` (or TOML) → emits per-language TOML/YAML
 
-## Design Principles
-
-- **Unix-like**: small tools, single responsibility, pipeable workflows  
-- **Modular**: clear separation between parsing, generation, and runtime use  
-- **Extensible**: add new fields, formats, or override defaults with minimal code  
-- **Accurate**: leverage Tree-sitter for embedded/compound filetype support
+---
 
 ## Development
 
-1. Clone this repo  
-2. Ensure Go 1.24+ is installed  
-3. Run tests:
+1. Fork & clone  
+2. Install prerequisites (Go, just)  
+3. Run tests
 
    ```bash
-   go test ./from_helix
-   go test ./to_all
+   just test-all
    ```
 
-4. Build binaries with debug symbols:
+4. Build binaries
 
    ```bash
-   go build -o bin/parse_helix ./from_helix
-   go build -o bin/parse        ./to_all
+   just build-all
    ```
+
+5. Generate or split language data
+
+   ```bash
+   just gen-json HELIX_TOML=… OUT=…
+   just split-files IN=… OUT_DIR=… FORMAT=…
+   ```
+
+---
 
 ## Contributing
 
-Contributions welcome! Whether it’s adding a new language, fixing a bug, or improving docs:
->[TIP!]
-> If you're adding or updating a language configuration, JSON is the single source of truth going forward, so look there please.
+Contributions welcome! When updating or adding new languages, remember:
+> JSON is the single source of truth going forward—please author there.
 
 1. Fork the repo  
-2. Create a feature branch
+2. Create a feature branch  
 3. Submit a PR against `main`  
-4. Ensure tests pass and code is formatted (`go fmt`)
+4. Ensure tests pass and code is formatted (`just fmt`)
+
+---
 
 ## Changelog
 
-All notable changes and release notes can be found in [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](CHANGELOG.md).
+
+---
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](LICENSE) for details.
+Distributed under the MIT License. See [LICENSE](LICENSE).
