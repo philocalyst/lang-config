@@ -44,15 +44,16 @@ install-to-all:
 install-all: install-from-helix install-to-all
 
 # ▰▰▰ Test ▰▰▰ #
-test-from-helix:
+test-parse-helix:
     @echo "Testing parse_helix…"
-    go test ./from_helix
-
-test-to-all:
+    go test -C {{HELIX_PARSE_CLI}} "parse_helix"
+        
+test-parse-all:
     @echo "Testing parse…"
-    go test ./to_all
+    go test -C {{HELIX_PARSE_CLI}} "parse_helix"
 
-test-all: test-from-helix test-to-all
+
+test-all: test-parse-helix test-parse-all
 
 # ▰▰▰ Format & Lint ▰▰▰ #
 fmt:
