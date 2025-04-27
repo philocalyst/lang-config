@@ -5,8 +5,10 @@ set shell := ["bash", "-eu", "-o", "pipefail", "-c"]
 # ▰▰▰ Variables ▰▰▰ #
 HELIX_PARSE_LOCATION := "parse/helix"
 PARSE_ALL_LOCATION := "parse/all"
+COMBINE_LOCATION := "parse/combine"
 HELIX_PARSE_CLI := "parse_helix"
 PARSE_ALL_CLI := "parse_all"
+COMBINE_CLI := "combine"
 
 # ▰▰▰ Help ▰▰▰ #
 help:
@@ -32,7 +34,25 @@ build-parse-all:
     @echo "Building parse…"
     go build -C {{PARSE_ALL_LOCATION}} -o {{justfile_directory()}}/{{PARSE_ALL_CLI}}
 
+build-combine:
+    @echo "Building combine…"
+    go build -C {{COMBINE_LOCATION}} -o {{justfile_directory()}}/{{COMBINE_CLI}}
+
 build-all: build-parse-helix build-parse-all
+
+combine IN FORMAT OUT_DIR=`justfile_directory()`: build-combine
+	@echo "Creating manifests..."
+	# TOML
+	{{COMBINE_BIN}} \
+	  -i {{IN}} \
+	  -o {{OUT_DIR}}/combined_languages.toml \
+	  -f toml
+	# YAML
+	{{COMBINE_BIN}} \
+	  -i {{IN}} \
+	  -o {{OUT_DIR}}/combined_languages.yaml \
+	  -f yaml
+    
 
 # ▰▰▰ Install ▰▰▰ #
 install-from-helix:
@@ -76,7 +96,7 @@ gen-json HELIX_TOML OUT=".": build-parse-helix
 
 # Split the JSON manifest into per-language files.
 #   just split-files IN=language_data.json OUT_DIR=language_files FORMAT=both
-split-files IN OUT_DIR="." FORMAT:
+split-files IN FORMAT OUT_DIR=".":
     @echo "→ {{PARSE_ALL_CLI}} -i {{IN}} -o {{OUT_DIR}} -f {{FORMAT}}"
     {{PARSE_ALL_CLI}} -i {{IN}} -o {{OUT_DIR}} -f {{FORMAT}}
 
