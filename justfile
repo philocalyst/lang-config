@@ -43,12 +43,12 @@ build-all: build-parse-helix build-parse-all
 combine IN FORMAT OUT_DIR=`justfile_directory()`: build-combine
 	@echo "Creating manifests..."
 	# TOML
-	{{COMBINE_BIN}} \
+	{{COMBINE_CLI}} \
 	  -i {{IN}} \
 	  -o {{OUT_DIR}}/combined_languages.toml \
 	  -f toml
 	# YAML
-	{{COMBINE_BIN}} \
+	{{COMBINE_CLI}} \
 	  -i {{IN}} \
 	  -o {{OUT_DIR}}/combined_languages.yaml \
 	  -f yaml
