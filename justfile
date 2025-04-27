@@ -70,13 +70,13 @@ lint:
 # ▰▰▰ Generate Files ▰▰▰ #
 # Generate a unified JSON from Helix's TOML.
 #   just gen-json HELIX_TOML=path/to/languages.toml OUT=language_data.json
-gen-json HELIX_TOML OUT: build-parse-helix
+gen-json HELIX_TOML OUT=".": build-parse-helix
     @echo "→ {{HELIX_PARSE_CLI}} -i {{HELIX_TOML}} -o {{OUT}}"
     {{HELIX_PARSE_CLI}} -i {{HELIX_TOML}} -o {{OUT}}
 
 # Split the JSON manifest into per-language files.
 #   just split-files IN=language_data.json OUT_DIR=language_files FORMAT=both
-split-files IN OUT_DIR FORMAT:
+split-files IN OUT_DIR="." FORMAT:
     @echo "→ {{PARSE_ALL_CLI}} -i {{IN}} -o {{OUT_DIR}} -f {{FORMAT}}"
     {{PARSE_ALL_CLI}} -i {{IN}} -o {{OUT_DIR}} -f {{FORMAT}}
 
